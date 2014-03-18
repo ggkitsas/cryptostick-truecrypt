@@ -1,0 +1,17 @@
+True Crypt improvement
+
+Description: True Crypt already has the capability to use smart cards (via PKCS#11) to unlock encrypted volumes. However, this feature is suboptimal (from a security standpoint) and need to be improved. Currently TrueCrypt simply stores the volume key in plaintext (called keyfile) in the (PIN protected) smart card. Instead TrueCrypt should use the expected challenge-response mechanism of smart cards: The volume key should be encrypted with smart card's certificate/key and stored at the volume. In order to unlock an encrypted volume, TrueCrypt should send the encrypted volume key to the smart card and receive the unencrypted key back. The unencrypted key should never be stored anywhere. A user documentation  incl. screen shots should be created.
+Tasks Involved: 
+
+    1) CUnderstand PKCS#11 interface and TrueCrypt's internals. You can see how PKCS#11 interface is implemented in OpenSC. This guy is author of pkcs#11 implementation in many application. I think TrueCrypt has implemented a part of pkcs#11 already (to store keyfile to smartcard)
+
+    2) Develop solution and agree with TrueCrypt's developers. 
+
+    3) Patch and test TrueCrypt with Crypto Stick. 
+
+    4) Commit patch to TrueCrypt and incorporate potential feedback from developers. 
+
+    5) Publish fork of TrueCrypt including binaries
+
+    6) Create user documentation.
+
