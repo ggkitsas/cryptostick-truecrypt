@@ -17,5 +17,5 @@ wxwidgets:
 
 truecrypt: wxwidgets
 	cd $(TRUECRYPT_DIR) && \
-	make -j$(J) PKCS11_INC=pkcs-11
+	make -j$(J) PKCS11_INC=$(ROOT_DIR)/pkcs-11
 
