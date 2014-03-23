@@ -4,7 +4,7 @@ WXWIDGETS_DIR=$(ROOT_DIR)/wxGTK-2.8.12
 TRUECRYPT_DIR=$(ROOT_DIR)/truecrypt-7.1a-source
 
 setup:
-	sudo apt-get install libgtk2.0-dev nasm libfuse-dev
+	sudo apt-get install libgtk2.0-dev nasm libfuse-dev opensc
 	wget http://sourceforge.net/projects/wxwindows/files/2.8.12/wxGTK-2.8.12.tar.gz
 	tar -xvf wxGTK-2.8.12.tar.gz
 	mkdir pkcs-11
