@@ -433,20 +433,21 @@ namespace TrueCrypt
 		CheckLibraryStatus();
 		CK_RV status;
 
+		// Sesion ended
 		if (Sessions.find (slotId) == Sessions.end())
 		{
 			OpenSession (slotId);
 		}
-		else
+		else	// Session alive
 		{
 			CK_SESSION_INFO sessionInfo;
 			status = Pkcs11Functions->C_GetSessionInfo (Sessions[slotId].Handle, &sessionInfo);
 			
-			if (status == CKR_OK)
+			if (status == CKR_OK) // No problems with C_GetSessionInfo
 			{
 				Sessions[slotId].UserLoggedIn = (sessionInfo.state == CKS_RO_USER_FUNCTIONS || sessionInfo.state == CKS_RW_USER_FUNCTIONS);
 			}
-			else
+			else	// Something wrong with C_GetSessionInfo, reopen session
 			{
 				try
 				{
@@ -458,18 +459,19 @@ namespace TrueCrypt
 		}
 
 		SecurityTokenInfo tokenInfo = GetTokenInfo (slotId);
-
+		
+		// Authenticate until we login to the token
 		while (!Sessions[slotId].UserLoggedIn && (tokenInfo.Flags & CKF_LOGIN_REQUIRED))
 		{
 			try
 			{
-				if (tokenInfo.Flags & CKF_PROTECTED_AUTHENTICATION_PATH)
+				if (tokenInfo.Flags & CKF_PROTECTED_AUTHENTICATION_PATH) // PIN is entered out of TC
 				{
 					status = Pkcs11Functions->C_Login (Sessions[slotId].Handle, CKU_USER, NULL_PTR, 0);
 					if (status != CKR_OK)
 						throw Pkcs11Exception (status);
 				}
-				else
+				else	// PIN must be sent through Cryptoki
 				{
 					string pin = tokenInfo.LabelUtf8;
 					if (tokenInfo.Label.empty())
