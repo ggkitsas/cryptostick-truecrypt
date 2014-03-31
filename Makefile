@@ -11,7 +11,6 @@ setup:
 	sudo apt-get install $(DEPS)
 	wget http://sourceforge.net/projects/wxwindows/files/2.8.12/wxGTK-2.8.12.tar.gz
 	tar -xvf wxGTK-2.8.12.tar.gz
-	# Download manually truecrypt sources
 
 wxwidgets:
 	cd $(TRUECRYPT_DIR) && \
