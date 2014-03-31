@@ -2,7 +2,7 @@ ROOT_DIR=$(CURDIR)
 #WXWIDGETS_DIR=$(ROOT_DIR)/wxWidgets-3.0.0
 WXWIDGETS_DIR=$(ROOT_DIR)/wxGTK-2.8.12
 TRUECRYPT_DIR=$(ROOT_DIR)/truecrypt-7.1a-source
-DEPS=libgtk2.0-dev nasm libfuse-dev opensc
+DEPS=libgtk2.0-dev nasm libfuse-dev opensc libwxgtk2.8-dev
 J?=1
 
 setup:
