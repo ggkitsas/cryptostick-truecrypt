@@ -1,0 +1,508 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ActiveSysEncDeviceSelected	Mount.c	/^BOOL ActiveSysEncDeviceSelected (void)$/;"	f
+AddFavoriteVolume	Favorites.h	/^		bool AddFavoriteVolume;$/;"	m	struct:TrueCrypt::FavoriteVolumesDlgProcArguments
+AddMountedVolumeToFavorites	Favorites.cpp	/^	BOOL AddMountedVolumeToFavorites (HWND hwndDlg, int driveNo, bool systemFavorites)$/;"	f	namespace:TrueCrypt
+AddRef	MainCom.cpp	/^	virtual ULONG STDMETHODCALLTYPE AddRef ()$/;"	f	class:TrueCryptMainCom
+AnalyzeKernelMiniDump	MainCom.cpp	/^	virtual void STDMETHODCALLTYPE AnalyzeKernelMiniDump (LONG_PTR hwndDlg)$/;"	f	class:TrueCryptMainCom
+AnalyzeKernelMiniDump	Mount.c	/^void AnalyzeKernelMiniDump (HWND hwndDlg)$/;"	f
+AskVolumePassword	Mount.c	/^static int AskVolumePassword (HWND hwndDlg, Password *password, char *titleStringId, BOOL enableMountOptions)$/;"	f	file:
+BackupVolumeHeader	MainCom.cpp	/^	virtual int STDMETHODCALLTYPE BackupVolumeHeader (LONG_PTR hwndDlg, BOOL bRequireConfirmation, BSTR lpszVolume)$/;"	f	class:TrueCryptMainCom
+BackupVolumeHeader	Mount.c	/^int BackupVolumeHeader (HWND hwndDlg, BOOL bRequireConfirmation, char *lpszVolume)$/;"	f
+Benchmark	Mount.c	/^static void Benchmark (HWND hwndDlg)$/;"	f	file:
+BootEncObj	Mount.c	/^BootEncryption			*BootEncObj = NULL;$/;"	v
+BootEncStatus	Mount.c	/^BootEncryptionStatus	BootEncStatus;$/;"	v
+BootLoaderPreferencesDlgProc	Mount.c	/^static BOOL CALLBACK BootLoaderPreferencesDlgProc (HWND hwndDlg, UINT msg, WPARAM wParam, LPARAM lParam)$/;"	f	file:
+BuildTree	Mount.c	/^void BuildTree (HWND hTree)$/;"	f
+CallDriver	MainCom.cpp	/^	virtual DWORD STDMETHODCALLTYPE CallDriver (DWORD ioctl, BSTR input, BSTR *output)$/;"	f	class:TrueCryptMainCom
+ChangeMainWindowVisibility	Mount.c	/^void ChangeMainWindowVisibility ()$/;"	f
+ChangePassword	MainCom.cpp	/^	virtual int STDMETHODCALLTYPE ChangePassword (BSTR volumePath, Password *oldPassword, Password *newPassword, int pkcs5, LONG_PTR hWnd)$/;"	f	class:TrueCryptMainCom
+ChangePassword	Mount.c	/^static void ChangePassword (HWND hwndDlg)$/;"	f	file:
+ChangeSysEncPassword	Mount.c	/^static void ChangeSysEncPassword (HWND hwndDlg, BOOL bOnlyChangeKDF)$/;"	f	file:
+CheckMountList	Mount.c	/^static BOOL CheckMountList ()$/;"	f	file:
+CheckSysEncMountWithoutPBA	Mount.c	/^BOOL CheckSysEncMountWithoutPBA (const char *devicePath, BOOL quiet)$/;"	f
+CloseSecurityTokenSessionsAfterMount	Mount.c	/^BOOL CloseSecurityTokenSessionsAfterMount = FALSE;$/;"	v
+CmdLineVolumeSpecified	Mount.c	/^static BOOL CmdLineVolumeSpecified;$/;"	v	file:
+CmdMountOptions	Mount.c	/^MountOptions CmdMountOptions;$/;"	v
+CmdMountOptionsValid	Mount.c	/^BOOL CmdMountOptionsValid = FALSE;$/;"	v
+CmdVolumePassword	Mount.c	/^Password CmdVolumePassword;			\/* Password passed from command line *\/$/;"	v
+CmdVolumePasswordValid	Mount.c	/^BOOL CmdVolumePasswordValid = FALSE;$/;"	v
+ComGetInstance	MainCom.cpp	/^static BOOL ComGetInstance (HWND hWnd, ITrueCryptMainCom **tcServer)$/;"	f	file:
+ComServerMain	MainCom.cpp	/^extern "C" BOOL ComServerMain ()$/;"	f
+ComServerMode	Mount.c	/^BOOL ComServerMode = FALSE;$/;"	v
+CopyFile	MainCom.cpp	/^	virtual DWORD STDMETHODCALLTYPE CopyFile (BSTR sourceFile, BSTR destinationFile)$/;"	f	class:TrueCryptMainCom
+CreateHiddenOS	Mount.c	/^static void CreateHiddenOS (void)$/;"	f	file:
+CreateRescueDisk	Mount.c	/^void CreateRescueDisk (void)$/;"	f
+DecryptSystemDevice	Mount.c	/^static void DecryptSystemDevice (void)$/;"	f	file:
+DeleteFile	MainCom.cpp	/^	virtual DWORD STDMETHODCALLTYPE DeleteFile (BSTR file)$/;"	f	class:TrueCryptMainCom
+DisableHotkeyMount	Favorites.h	/^		bool DisableHotkeyMount;$/;"	m	struct:TrueCrypt::FavoriteVolume
+DisableSystemCrashDetection	Mount.c	/^BOOL DisableSystemCrashDetection = FALSE;$/;"	v
+DisconnectedDevice	Favorites.h	/^		bool DisconnectedDevice;$/;"	m	struct:TrueCrypt::FavoriteVolume
+Dismount	Mount.c	/^static BOOL Dismount (HWND hwndDlg, int nDosDriveNo)$/;"	f	file:
+DismountAll	Mount.c	/^static BOOL DismountAll (HWND hwndDlg, BOOL forceUnmount, BOOL interact, int dismountMaxRetries, int dismountAutoRetryDelay)$/;"	f	file:
+DismountIdleVolumes	Mount.c	/^void DismountIdleVolumes ()$/;"	f
+DisplayHotkeyList	Hotkeys.c	/^static void DisplayHotkeyList (HWND hwndDlg)$/;"	f	file:
+ENC_SYSDRIVE_PSEUDO_DRIVE_LETTER	Mount.h	35;"	d
+EnableDisableButtons	Mount.c	/^void EnableDisableButtons (HWND hwndDlg)$/;"	f
+EncryptSystemDevice	Mount.c	/^static void EncryptSystemDevice (void)$/;"	f	file:
+EndMainDlg	Mount.c	/^void EndMainDlg (HWND hwndDlg)$/;"	f
+ExtractCommandLine	Mount.c	/^void ExtractCommandLine (HWND hwndDlg, char *lpszCommandLine)$/;"	f
+FavoriteVolume	Favorites.h	/^		FavoriteVolume()$/;"	f	struct:TrueCrypt::FavoriteVolume
+FavoriteVolume	Favorites.h	/^	struct FavoriteVolume$/;"	s	namespace:TrueCrypt
+FavoriteVolumes	Favorites.cpp	/^	vector <FavoriteVolume> FavoriteVolumes;$/;"	m	namespace:TrueCrypt	file:
+FavoriteVolumesDlgProc	Favorites.cpp	/^	static BOOL CALLBACK FavoriteVolumesDlgProc (HWND hwndDlg, UINT msg, WPARAM wParam, LPARAM lParam)$/;"	f	namespace:TrueCrypt
+FavoriteVolumesDlgProcArguments	Favorites.h	/^	struct FavoriteVolumesDlgProcArguments$/;"	s	namespace:TrueCrypt
+FavoriteVolumesMenu	Favorites.cpp	/^	HMENU FavoriteVolumesMenu;$/;"	m	namespace:TrueCrypt	file:
+FavoritesMountedOnArrivalStillConnected	Favorites.cpp	/^	list <FavoriteVolume> FavoritesMountedOnArrivalStillConnected;$/;"	m	namespace:TrueCrypt	file:
+FavoritesOnArrivalMountRequired	Favorites.cpp	/^	list <FavoriteVolume> FavoritesOnArrivalMountRequired;$/;"	m	namespace:TrueCrypt	file:
+FillFavoriteVolumesMenu	Favorites.cpp	/^	static void FillFavoriteVolumesMenu ()$/;"	f	namespace:TrueCrypt
+FillListControl	Favorites.cpp	/^	static void FillListControl (HWND favoriteListControl, vector <FavoriteVolume> &favorites)$/;"	f	namespace:TrueCrypt
+FillListControlSubItems	Favorites.cpp	/^	static void FillListControlSubItems (HWND FavoriteListControl, int line, const FavoriteVolume &favorite)$/;"	f	namespace:TrueCrypt
+FirstCmdKeyFile	Mount.c	/^KeyFile *FirstCmdKeyFile;$/;"	v
+GetCipherBlockSizeByDriveNo	Mount.c	/^int GetCipherBlockSizeByDriveNo (int nDosDriveNo)$/;"	f
+GetElevatedInstance	MainCom.cpp	/^ITrueCryptMainCom *GetElevatedInstance (HWND parent)$/;"	f
+GetExecutableImageInformation	Mount.c	/^BOOL GetExecutableImageInformation (const string &path, string &version, string &description, string &companyName, string &productName)$/;"	f
+GetFavoriteVolumeLabel	Favorites.cpp	/^	wstring GetFavoriteVolumeLabel (const string &volumePath)$/;"	f	namespace:TrueCrypt
+GetItemLong	Mount.c	/^LPARAM GetItemLong (HWND hTree, int itemNo)$/;"	f
+GetKeyName	Hotkeys.c	/^BOOL GetKeyName (UINT vKey, wchar_t *keyName)$/;"	f
+GetModeOfOperationByDriveNo	Mount.c	/^int GetModeOfOperationByDriveNo (int nDosDriveNo)$/;"	f
+GetSelectedLong	Mount.c	/^LPARAM GetSelectedLong (HWND hTree)$/;"	f
+GetSysEncDeviceEncryptedPartSize	Mount.c	/^unsigned __int64 GetSysEncDeviceEncryptedPartSize (BOOL bSilent)$/;"	f
+GetSysEncDeviceSize	Mount.c	/^unsigned __int64 GetSysEncDeviceSize (BOOL bSilent)$/;"	f
+HK_AUTOMOUNT_DEVICES	Hotkeys.h	/^	HK_AUTOMOUNT_DEVICES = 0,$/;"	e	enum:__anon1
+HK_CLOSE_SECURITY_TOKEN_SESSIONS	Hotkeys.h	/^	HK_CLOSE_SECURITY_TOKEN_SESSIONS,$/;"	e	enum:__anon1
+HK_DISMOUNT_ALL	Hotkeys.h	/^	HK_DISMOUNT_ALL,$/;"	e	enum:__anon1
+HK_DISMOUNT_ALL_AND_WIPE	Hotkeys.h	/^	HK_DISMOUNT_ALL_AND_WIPE,$/;"	e	enum:__anon1
+HK_FORCE_DISMOUNT_ALL_AND_WIPE	Hotkeys.h	/^	HK_FORCE_DISMOUNT_ALL_AND_WIPE,$/;"	e	enum:__anon1
+HK_FORCE_DISMOUNT_ALL_AND_WIPE_AND_EXIT	Hotkeys.h	/^	HK_FORCE_DISMOUNT_ALL_AND_WIPE_AND_EXIT,$/;"	e	enum:__anon1
+HK_MOUNT_FAVORITE_VOLUMES	Hotkeys.h	/^	HK_MOUNT_FAVORITE_VOLUMES,$/;"	e	enum:__anon1
+HK_SHOW_HIDE_MAIN_WINDOW	Hotkeys.h	/^	HK_SHOW_HIDE_MAIN_WINDOW,$/;"	e	enum:__anon1
+HK_WIPE_CACHE	Hotkeys.h	/^	HK_WIPE_CACHE,$/;"	e	enum:__anon1
+HandleDriveListMouseWheelEvent	Mount.c	/^static BOOL HandleDriveListMouseWheelEvent (UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL bListMustBePointed)$/;"	f	file:
+HandleHotKey	Mount.c	/^static void HandleHotKey (HWND hwndDlg, WPARAM wParam)$/;"	f	file:
+HiddenSysLeakProtectionNotificationStatus	Mount.c	/^int HiddenSysLeakProtectionNotificationStatus = TC_HIDDEN_OS_READ_ONLY_NOTIF_MODE_NONE;$/;"	v
+HookMouseWheel	Mount.c	/^void HookMouseWheel (HWND hwndDlg, UINT ctrlId)$/;"	f
+Hotkeys	Hotkeys.c	/^TCHOTKEY	Hotkeys [NBR_HOTKEYS];$/;"	v
+HotkeysDlgProc	Hotkeys.c	/^BOOL CALLBACK HotkeysDlgProc (HWND hwndDlg, UINT msg, WPARAM wParam, LPARAM lParam)$/;"	f
+IDB_DRIVEICON	Resource.h	8;"	d
+IDB_DRIVEICON_MASK	Resource.h	10;"	d
+IDB_LOGO_288DPI	Resource.h	16;"	d
+IDB_LOGO_96DPI	Resource.h	17;"	d
+IDB_SYS_DRIVEICON	Resource.h	18;"	d
+IDB_SYS_DRIVEICON_MASK	Resource.h	19;"	d
+IDC_ALLOW_ESC_PBA_BYPASS	Resource.h	129;"	d
+IDC_AUTORUN_DISABLE	Resource.h	44;"	d
+IDC_AUTORUN_MOUNT	Resource.h	47;"	d
+IDC_AUTORUN_START	Resource.h	45;"	d
+IDC_AUTO_DETECT_PKCS11_MODULE	Resource.h	125;"	d
+IDC_BENCHMARK	Resource.h	46;"	d
+IDC_BOOT_LOADER_CACHE_PASSWORD	Resource.h	131;"	d
+IDC_BROWSE_DIRS	Resource.h	42;"	d
+IDC_BROWSE_FILES	Resource.h	59;"	d
+IDC_CACHE	Resource.h	28;"	d
+IDC_CLOSE_BKG_TASK_WHEN_NOVOL	Resource.h	98;"	d
+IDC_CLOSE_TOKEN_SESSION_AFTER_MOUNT	Resource.h	126;"	d
+IDC_COPY_WIZARD	Resource.h	49;"	d
+IDC_CREATE	Resource.h	84;"	d
+IDC_CREATE_VOLUME	Resource.h	61;"	d
+IDC_CUSTOM_BOOT_LOADER_MESSAGE	Resource.h	130;"	d
+IDC_CUSTOM_BOOT_LOADER_MESSAGE_HELP	Resource.h	134;"	d
+IDC_DIRECTORY	Resource.h	40;"	d
+IDC_DISABLE_BOOT_LOADER_OUTPUT	Resource.h	128;"	d
+IDC_DRIVELIST	Resource.h	30;"	d
+IDC_ENABLE_HARDWARE_ENCRYPTION	Resource.h	138;"	d
+IDC_ENABLE_KEYFILES	Resource.h	32;"	d
+IDC_ENABLE_NEW_KEYFILES	Resource.h	35;"	d
+IDC_ENCRYPTION_FREE_CPU_COUNT	Resource.h	154;"	d
+IDC_EXIT	Resource.h	85;"	d
+IDC_FAVORITES_HELP_LINK	Resource.h	158;"	d
+IDC_FAVORITE_DISABLE_HOTKEY	Resource.h	146;"	d
+IDC_FAVORITE_LABEL	Resource.h	143;"	d
+IDC_FAVORITE_MOUNT_ON_ARRIVAL	Resource.h	142;"	d
+IDC_FAVORITE_MOUNT_ON_LOGON	Resource.h	145;"	d
+IDC_FAVORITE_MOUNT_READONLY	Resource.h	140;"	d
+IDC_FAVORITE_MOUNT_REMOVABLE	Resource.h	141;"	d
+IDC_FAVORITE_MOVE_DOWN	Resource.h	148;"	d
+IDC_FAVORITE_MOVE_UP	Resource.h	147;"	d
+IDC_FAVORITE_OPEN_EXPLORER_WIN_ON_MOUNT	Resource.h	151;"	d
+IDC_FAVORITE_REMOVE	Resource.h	149;"	d
+IDC_FAVORITE_VOLUMES_LIST	Resource.h	139;"	d
+IDC_FAV_VOL_OPTIONS_GLOBAL_SETTINGS_BOX	Resource.h	159;"	d
+IDC_FAV_VOL_OPTIONS_GROUP_BOX	Resource.h	157;"	d
+IDC_HK_DISMOUNT_BALLOON_TOOLTIP	Resource.h	105;"	d
+IDC_HK_DISMOUNT_PLAY_SOUND	Resource.h	107;"	d
+IDC_HK_MOD_ALT	Resource.h	118;"	d
+IDC_HK_MOD_CTRL	Resource.h	117;"	d
+IDC_HK_MOD_SHIFT	Resource.h	116;"	d
+IDC_HK_MOD_WIN	Resource.h	119;"	d
+IDC_HOTKEY_ASSIGN	Resource.h	108;"	d
+IDC_HOTKEY_KEY	Resource.h	110;"	d
+IDC_HOTKEY_LIST	Resource.h	112;"	d
+IDC_HOTKEY_REMOVE	Resource.h	109;"	d
+IDC_HW_AES_SUPPORTED_BY_CPU	Resource.h	152;"	d
+IDC_KEYFILES	Resource.h	56;"	d
+IDC_KEY_FILES	Resource.h	54;"	d
+IDC_LIMIT_ENC_THREAD_POOL	Resource.h	153;"	d
+IDC_LOGO	Resource.h	121;"	d
+IDC_MORE_INFO_ON_HW_ACCELERATION	Resource.h	99;"	d
+IDC_MORE_INFO_ON_THREAD_BASED_PARALLELIZATION	Resource.h	101;"	d
+IDC_MORE_SETTINGS	Resource.h	132;"	d
+IDC_MOUNTALL	Resource.h	64;"	d
+IDC_MOUNT_OPTIONS	Resource.h	50;"	d
+IDC_NEW_KEYFILES	Resource.h	55;"	d
+IDC_NO_HISTORY	Resource.h	29;"	d
+IDC_OLD_PASSWORD	Resource.h	27;"	d
+IDC_PASSWORD	Resource.h	58;"	d
+IDC_PKCS11_MODULE	Resource.h	123;"	d
+IDC_PKCS5_PRF_ID	Resource.h	38;"	d
+IDC_PREF_BKG_TASK_ENABLE	Resource.h	26;"	d
+IDC_PREF_CACHE_PASSWORDS	Resource.h	39;"	d
+IDC_PREF_DISMOUNT_INACTIVE	Resource.h	43;"	d
+IDC_PREF_DISMOUNT_INACTIVE_TIME	Resource.h	92;"	d
+IDC_PREF_DISMOUNT_LOGOFF	Resource.h	41;"	d
+IDC_PREF_DISMOUNT_POWERSAVING	Resource.h	95;"	d
+IDC_PREF_DISMOUNT_SCREENSAVER	Resource.h	94;"	d
+IDC_PREF_FORCE_AUTO_DISMOUNT	Resource.h	91;"	d
+IDC_PREF_LOGON_MOUNT_DEVICES	Resource.h	103;"	d
+IDC_PREF_LOGON_START	Resource.h	102;"	d
+IDC_PREF_MOUNT_READONLY	Resource.h	23;"	d
+IDC_PREF_MOUNT_REMOVABLE	Resource.h	24;"	d
+IDC_PREF_OPEN_EXPLORER	Resource.h	31;"	d
+IDC_PREF_USE_DIFF_TRAY_ICON_IF_VOL_MOUNTED	Resource.h	34;"	d
+IDC_PREF_WIPE_CACHE_ON_AUTODISMOUNT	Resource.h	97;"	d
+IDC_PREF_WIPE_CACHE_ON_EXIT	Resource.h	37;"	d
+IDC_PRESERVE_TIMESTAMPS	Resource.h	36;"	d
+IDC_RESET_HOTKEYS	Resource.h	113;"	d
+IDC_SELECT_DEVICE	Resource.h	60;"	d
+IDC_SELECT_FILE	Resource.h	66;"	d
+IDC_SELECT_PKCS11_MODULE	Resource.h	124;"	d
+IDC_SHOW_PASSWORD	Resource.h	120;"	d
+IDC_SHOW_PASSWORD_CHPWD_NEW	Resource.h	104;"	d
+IDC_SHOW_PASSWORD_CHPWD_ORI	Resource.h	106;"	d
+IDC_TRAVEL_OPEN_EXPLORER	Resource.h	86;"	d
+IDC_TRAV_CACHE_PASSWORDS	Resource.h	87;"	d
+IDC_UNMOUNTALL	Resource.h	88;"	d
+IDC_VERIFY	Resource.h	25;"	d
+IDC_VOLUME	Resource.h	57;"	d
+IDC_VOLUME_NAME	Resource.h	48;"	d
+IDC_VOLUME_PROPERTIES	Resource.h	68;"	d
+IDC_VOLUME_PROPERTIES_LIST	Resource.h	33;"	d
+IDC_VOLUME_TOOLS	Resource.h	62;"	d
+IDC_WIPE_CACHE	Resource.h	63;"	d
+IDD_FAVORITE_VOLUMES	Resource.h	22;"	d
+IDD_HOTKEYS_DLG	Resource.h	67;"	d
+IDD_MOUNT_DLG	Resource.h	6;"	d
+IDD_PASSWORDCHANGE_DLG	Resource.h	7;"	d
+IDD_PASSWORD_DLG	Resource.h	9;"	d
+IDD_PERFORMANCE_SETTINGS	Resource.h	70;"	d
+IDD_PREFERENCES_DLG	Resource.h	12;"	d
+IDD_SYSENC_SETTINGS	Resource.h	21;"	d
+IDD_TOKEN_PREFERENCES	Resource.h	20;"	d
+IDD_TRAVELER_DLG	Resource.h	65;"	d
+IDD_VOLUME_PROPERTIES	Resource.h	13;"	d
+IDM_ABOUT	Resource.h	161;"	d
+IDM_ADD_REMOVE_VOL_KEYFILES	Resource.h	194;"	d
+IDM_ADD_VOLUME_TO_FAVORITES	Resource.h	219;"	d
+IDM_ADD_VOLUME_TO_SYSTEM_FAVORITES	Resource.h	220;"	d
+IDM_ANALYZE_SYSTEM_CRASH	Resource.h	222;"	d
+IDM_BACKUP_VOL_HEADER	Resource.h	185;"	d
+IDM_BENCHMARK	Resource.h	164;"	d
+IDM_CHANGE_HEADER_KEY_DERIV_ALGO	Resource.h	196;"	d
+IDM_CHANGE_PASSWORD	Resource.h	174;"	d
+IDM_CHANGE_SYS_HEADER_KEY_DERIV_ALGO	Resource.h	200;"	d
+IDM_CHANGE_SYS_PASSWORD	Resource.h	201;"	d
+IDM_CLEAR_HISTORY	Resource.h	163;"	d
+IDM_CLOSE_ALL_TOKEN_SESSIONS	Resource.h	211;"	d
+IDM_CONTACT	Resource.h	190;"	d
+IDM_CREATE_HIDDEN_OS	Resource.h	209;"	d
+IDM_CREATE_RESCUE_DISK	Resource.h	202;"	d
+IDM_CREATE_VOLUME	Resource.h	176;"	d
+IDM_DEFAULT_KEYFILES	Resource.h	169;"	d
+IDM_ENCRYPT_SYSTEM_DEVICE	Resource.h	206;"	d
+IDM_FAQ	Resource.h	167;"	d
+IDM_HELP	Resource.h	160;"	d
+IDM_HOMEPAGE	Resource.h	192;"	d
+IDM_HOTKEY_SETTINGS	Resource.h	187;"	d
+IDM_KEYFILE_GENERATOR	Resource.h	197;"	d
+IDM_LANGUAGE	Resource.h	183;"	d
+IDM_LICENSE	Resource.h	179;"	d
+IDM_MANAGE_TOKEN_KEYFILES	Resource.h	215;"	d
+IDM_MOUNTALL	Resource.h	171;"	d
+IDM_MOUNT_FAVORITE_VOLUMES	Resource.h	184;"	d
+IDM_MOUNT_SYSENC_PART_WITHOUT_PBA	Resource.h	208;"	d
+IDM_MOUNT_VOLUME	Resource.h	173;"	d
+IDM_MOUNT_VOLUME_OPTIONS	Resource.h	166;"	d
+IDM_NEWS	Resource.h	189;"	d
+IDM_ONLINE_HELP	Resource.h	199;"	d
+IDM_ONLINE_TUTORIAL	Resource.h	198;"	d
+IDM_ORGANIZE_FAVORITES	Resource.h	217;"	d
+IDM_ORGANIZE_SYSTEM_FAVORITES	Resource.h	218;"	d
+IDM_PERFORMANCE_SETTINGS	Resource.h	221;"	d
+IDM_PERMANENTLY_DECRYPT_SYS	Resource.h	203;"	d
+IDM_PREFERENCES	Resource.h	178;"	d
+IDM_REFRESH_DRIVE_LETTERS	Resource.h	168;"	d
+IDM_REMOVE_ALL_KEYFILES_FROM_VOL	Resource.h	195;"	d
+IDM_RESTORE_VOL_HEADER	Resource.h	186;"	d
+IDM_RESUME_INTERRUPTED_PROC	Resource.h	214;"	d
+IDM_SELECT_DEVICE	Resource.h	181;"	d
+IDM_SELECT_FILE	Resource.h	180;"	d
+IDM_SYSENC_RESUME	Resource.h	207;"	d
+IDM_SYSENC_SETTINGS	Resource.h	213;"	d
+IDM_SYSTEM_ENCRYPTION_STATUS	Resource.h	205;"	d
+IDM_SYS_ENC_SETTINGS	Resource.h	212;"	d
+IDM_SYS_FAVORITES_SETTINGS	Resource.h	216;"	d
+IDM_TC_DOWNLOADS	Resource.h	188;"	d
+IDM_TEST_VECTORS	Resource.h	193;"	d
+IDM_TOKEN_PREFERENCES	Resource.h	210;"	d
+IDM_TRAVELER	Resource.h	165;"	d
+IDM_UNMOUNTALL	Resource.h	172;"	d
+IDM_UNMOUNT_VOLUME	Resource.h	162;"	d
+IDM_VERIFY_RESCUE_DISK	Resource.h	204;"	d
+IDM_VERSION_HISTORY	Resource.h	191;"	d
+IDM_VOLUME_PROPERTIES	Resource.h	182;"	d
+IDM_VOLUME_WIZARD	Resource.h	175;"	d
+IDM_WEBSITE	Resource.h	170;"	d
+IDM_WIPE_CACHE	Resource.h	177;"	d
+IDR_MENU	Resource.h	11;"	d
+IDR_MOUNT_RSRC_HEADER	Resource.h	14;"	d
+IDR_MOUNT_TLB	Resource.h	5;"	d
+IDS_UACSTRING	Resource.h	15;"	d
+IDT_ACCELERATION_OPTIONS	Resource.h	137;"	d
+IDT_ASSIGN_HOTKEY	Resource.h	115;"	d
+IDT_AUTORUN	Resource.h	71;"	d
+IDT_AUTO_DISMOUNT	Resource.h	90;"	d
+IDT_AUTO_DISMOUNT_ON	Resource.h	96;"	d
+IDT_BOOT_LOADER_SCREEN_OPTIONS	Resource.h	135;"	d
+IDT_CONFIRM_PASSWORD	Resource.h	79;"	d
+IDT_CURRENT	Resource.h	76;"	d
+IDT_CUSTOM_BOOT_LOADER_MESSAGE	Resource.h	133;"	d
+IDT_DEFAULT_MOUNT_OPTIONS	Resource.h	82;"	d
+IDT_DISMOUNT_ACTION	Resource.h	114;"	d
+IDT_FAVORITE_LABEL	Resource.h	144;"	d
+IDT_FILE_SETTINGS	Resource.h	69;"	d
+IDT_HOTKEY_KEY	Resource.h	111;"	d
+IDT_HW_AES_SUPPORTED_BY_CPU	Resource.h	150;"	d
+IDT_LIMIT_ENC_THREAD_POOL_NOTE	Resource.h	156;"	d
+IDT_LOGON	Resource.h	100;"	d
+IDT_MINUTES	Resource.h	93;"	d
+IDT_MOUNT_LETTER	Resource.h	52;"	d
+IDT_MOUNT_SETTINGS	Resource.h	53;"	d
+IDT_NEW	Resource.h	77;"	d
+IDT_NEW_PASSWORD	Resource.h	78;"	d
+IDT_PARALLELIZATION_OPTIONS	Resource.h	155;"	d
+IDT_PASSWORD	Resource.h	75;"	d
+IDT_PKCS11_LIB_HELP	Resource.h	136;"	d
+IDT_PKCS11_LIB_PATH	Resource.h	122;"	d
+IDT_PKCS5_PRF	Resource.h	80;"	d
+IDT_PW_CACHE_OPTIONS	Resource.h	81;"	d
+IDT_SECURITY_OPTIONS	Resource.h	127;"	d
+IDT_TASKBAR_ICON	Resource.h	89;"	d
+IDT_TRAVELER_MOUNT	Resource.h	51;"	d
+IDT_TRAVEL_INSERTION	Resource.h	72;"	d
+IDT_TRAVEL_ROOT	Resource.h	73;"	d
+IDT_VOLUME	Resource.h	74;"	d
+IDT_WINDOWS_RELATED_SETTING	Resource.h	83;"	d
+InitMainDialog	Mount.c	/^static void InitMainDialog (HWND hwndDlg)$/;"	f	file:
+IsPagingFileActive	MainCom.cpp	/^	virtual BOOL STDMETHODCALLTYPE IsPagingFileActive (BOOL checkNonWindowsPartitionsOnly)$/;"	f	class:TrueCryptMainCom
+KeyfileDefaultsDlg	Mount.c	/^static void KeyfileDefaultsDlg (HWND hwndDlg)$/;"	f	file:
+Label	Favorites.h	/^		wstring Label;$/;"	m	struct:TrueCrypt::FavoriteVolume
+LastDriveListVolumeColumnWidth	Mount.c	/^static int LastDriveListVolumeColumnWidth;$/;"	v	file:
+LastKnownLogicalDrives	Mount.c	/^static DWORD				LastKnownLogicalDrives;$/;"	v	file:
+LastKnownMountList	Mount.c	/^static MOUNT_LIST_STRUCT	LastKnownMountList;$/;"	v	file:
+LaunchVolCreationWizard	Mount.c	/^static void LaunchVolCreationWizard (HWND hwndDlg, const char *arg)$/;"	f	file:
+LoadDriveLetters	Mount.c	/^void LoadDriveLetters (HWND hTree, int drive)$/;"	f
+LoadFavoriteVolumes	Favorites.cpp	/^	void LoadFavoriteVolumes ()$/;"	f	namespace:TrueCrypt
+LoadFavoriteVolumes	Favorites.cpp	/^	void LoadFavoriteVolumes (vector <FavoriteVolume> &favorites, bool systemFavorites, bool noUacElevation)$/;"	f	namespace:TrueCrypt
+LoadSettings	Mount.c	/^void LoadSettings (HWND hwndDlg)$/;"	f
+LogOn	Mount.c	/^BOOL LogOn = FALSE;$/;"	v
+MAX_KEY_COMB_NAME_LEN	Hotkeys.c	16;"	d	file:
+MainDialogProc	Mount.c	/^BOOL CALLBACK MainDialogProc (HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam)$/;"	f
+MainWindowHidden	Mount.c	/^static BOOL MainWindowHidden = FALSE;$/;"	v	file:
+MaxVolumeIdleTime	Mount.c	/^int MaxVolumeIdleTime = -120;$/;"	v
+MessageThreadId	MainCom.cpp	/^	DWORD MessageThreadId;$/;"	m	class:TrueCryptMainCom	file:
+Mount	Mount.c	/^static BOOL Mount (HWND hwndDlg, int nDosDriveNo, char *szFileName)$/;"	f	file:
+MountAllDevices	Mount.c	/^static BOOL MountAllDevices (HWND hwndDlg, BOOL bPasswordPrompt)$/;"	f	file:
+MountFavoriteVolumes	Mount.c	/^BOOL MountFavoriteVolumes (BOOL systemFavorites, BOOL logOnMount, BOOL hotKeyMount, const FavoriteVolume &favoriteVolumeToMount)$/;"	f
+MountOnArrival	Favorites.h	/^		bool MountOnArrival;$/;"	m	struct:TrueCrypt::FavoriteVolume
+MountOnLogOn	Favorites.h	/^		bool MountOnLogOn;$/;"	m	struct:TrueCrypt::FavoriteVolume
+MountOptionsDlgProc	Mount.c	/^BOOL CALLBACK MountOptionsDlgProc (HWND hwndDlg, UINT msg, WPARAM wParam, LPARAM lParam)$/;"	f
+MountPoint	Favorites.h	/^		string MountPoint;$/;"	m	struct:TrueCrypt::FavoriteVolume
+MountSelectedVolume	Mount.c	/^void MountSelectedVolume (HWND hwndDlg, BOOL mountWithOptions)$/;"	f
+MouseWheelProc	Mount.c	/^static LRESULT CALLBACK MouseWheelProc (HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)$/;"	f	file:
+NBR_HOTKEYS	Hotkeys.h	/^	NBR_HOTKEYS$/;"	e	enum:__anon1
+NewFavoriteVolume	Favorites.h	/^		FavoriteVolume NewFavoriteVolume;$/;"	m	struct:TrueCrypt::FavoriteVolumesDlgProcArguments
+NoCmdLineArgs	Mount.c	/^static int NoCmdLineArgs;$/;"	v	file:
+ObjectCount	MainCom.cpp	/^static volatile LONG ObjectCount = 0;$/;"	v	file:
+OnFavoriteVolumesUpdated	Favorites.cpp	/^	static void OnFavoriteVolumesUpdated ()$/;"	f	namespace:TrueCrypt
+OpenExplorerWindow	Favorites.h	/^		bool OpenExplorerWindow;$/;"	m	struct:TrueCrypt::FavoriteVolume
+OrganizeFavoriteVolumes	Favorites.cpp	/^	BOOL OrganizeFavoriteVolumes (HWND hwndDlg, bool systemFavorites, const FavoriteVolume &newFavorite)$/;"	f	namespace:TrueCrypt
+OrigKeyboardLayout	Mount.c	/^char OrigKeyboardLayout [8+1] = "00000409";$/;"	v
+PCDM_ADD_REMOVE_VOL_KEYFILES	Mount.h	/^	PCDM_ADD_REMOVE_VOL_KEYFILES,$/;"	e	enum:__anon3
+PCDM_CHANGE_PASSWORD	Mount.h	/^	PCDM_CHANGE_PASSWORD = 0,$/;"	e	enum:__anon3
+PCDM_CHANGE_PKCS5_PRF	Mount.h	/^	PCDM_CHANGE_PKCS5_PRF,$/;"	e	enum:__anon3
+PCDM_REMOVE_ALL_KEYFILES_FROM_VOL	Mount.h	/^	PCDM_REMOVE_ALL_KEYFILES_FROM_VOL$/;"	e	enum:__anon3
+PasswordChangeDlgProc	Mount.c	/^BOOL CALLBACK PasswordChangeDlgProc (HWND hwndDlg, UINT msg, WPARAM wParam, LPARAM lParam)$/;"	f
+PasswordChangeEnable	Mount.c	/^static void PasswordChangeEnable (HWND hwndDlg, int button, int passwordId, BOOL keyFilesEnabled,$/;"	f	file:
+PasswordDialogDisableMountOptions	Mount.c	/^static BOOL PasswordDialogDisableMountOptions;$/;"	v	file:
+PasswordDialogTitleStringId	Mount.c	/^static char *PasswordDialogTitleStringId;$/;"	v	file:
+PasswordDlgProc	Mount.c	/^BOOL CALLBACK PasswordDlgProc (HWND hwndDlg, UINT msg, WPARAM wParam, LPARAM lParam)$/;"	f
+PasswordDlgVolume	Mount.c	/^static char PasswordDlgVolume[MAX_PATH];$/;"	v	file:
+Path	Favorites.h	/^		string Path;$/;"	m	struct:TrueCrypt::FavoriteVolume
+PerformanceSettingsDlgProc	Mount.c	/^static BOOL CALLBACK PerformanceSettingsDlgProc (HWND hwndDlg, UINT msg, WPARAM wParam, LPARAM lParam)$/;"	f	file:
+PopulateSysEncContextMenu	Mount.c	/^static void PopulateSysEncContextMenu (HMENU popup, BOOL bToolsOnly)$/;"	f	file:
+PreferencesDlgEnableButtons	Mount.c	/^static void PreferencesDlgEnableButtons (HWND hwndDlg)$/;"	f	file:
+PreferencesDlgProc	Mount.c	/^BOOL CALLBACK PreferencesDlgProc (HWND hwndDlg, UINT msg, WPARAM wParam, LPARAM lParam)$/;"	f
+QueryInterface	MainCom.cpp	/^	virtual HRESULT STDMETHODCALLTYPE QueryInterface (REFIID riid, void **ppvObject)$/;"	f	class:TrueCryptMainCom
+Quit	Mount.c	/^BOOL Quit = FALSE;					\/* Exit after processing command line *\/$/;"	v
+ReadOnly	Favorites.h	/^		bool ReadOnly;$/;"	m	struct:TrueCrypt::FavoriteVolume
+ReadWriteFile	MainCom.cpp	/^	virtual DWORD STDMETHODCALLTYPE ReadWriteFile (BOOL write, BOOL device, BSTR filePath, BSTR *bufferBstr, unsigned __int64 offset, unsigned __int32 size, DWORD *sizeDone)$/;"	f	class:TrueCryptMainCom
+RecentBootEncStatus	Mount.c	/^BootEncryptionStatus	RecentBootEncStatus;$/;"	v
+RefCount	MainCom.cpp	/^	LONG RefCount;$/;"	m	class:TrueCryptMainCom	file:
+RefreshMainDlg	Mount.c	/^void RefreshMainDlg (HWND hwndDlg)$/;"	f
+RegisterAllHotkeys	Hotkeys.c	/^BOOL RegisterAllHotkeys (HWND hwndDlg, TCHOTKEY hotkeys[])$/;"	f
+RegisterFilterDriver	MainCom.cpp	/^	virtual DWORD STDMETHODCALLTYPE RegisterFilterDriver (BOOL registerDriver, int filterType)$/;"	f	class:TrueCryptMainCom
+RegisterSystemFavoritesService	MainCom.cpp	/^	virtual DWORD STDMETHODCALLTYPE RegisterSystemFavoritesService (BOOL registerService)$/;"	f	class:TrueCryptMainCom
+Release	MainCom.cpp	/^	virtual ULONG STDMETHODCALLTYPE Release ()$/;"	f	class:TrueCryptMainCom
+Removable	Favorites.h	/^		bool Removable;$/;"	m	struct:TrueCrypt::FavoriteVolume
+RestoreVolumeHeader	MainCom.cpp	/^	virtual int STDMETHODCALLTYPE RestoreVolumeHeader (LONG_PTR hwndDlg, BSTR lpszVolume)$/;"	f	class:TrueCryptMainCom
+RestoreVolumeHeader	Mount.c	/^int RestoreVolumeHeader (HWND hwndDlg, char *lpszVolume)$/;"	f
+ResumeInterruptedNonSysInplaceEncProcess	Mount.c	/^static void ResumeInterruptedNonSysInplaceEncProcess (void)$/;"	f	file:
+ResumeInterruptedSysEncProcess	Mount.c	/^static void ResumeInterruptedSysEncProcess (void)$/;"	f	file:
+SaveDefaultKeyFilesParam	Mount.c	/^static void SaveDefaultKeyFilesParam (void)$/;"	f	file:
+SaveFavoriteVolumes	Favorites.cpp	/^	static bool SaveFavoriteVolumes (const vector <FavoriteVolume> &favorites, bool systemFavorites)$/;"	f	namespace:TrueCrypt
+SaveSettings	Mount.c	/^void SaveSettings (HWND hwndDlg)$/;"	f
+ScanAndProcessKey	Hotkeys.c	/^static void ScanAndProcessKey (UINT *vKeyCode, wchar_t *keyName)$/;"	f	file:
+SecurityTokenPreferencesDialog	Mount.c	/^void SecurityTokenPreferencesDialog (HWND hwndDlg)$/;"	f
+SecurityTokenPreferencesDlgProc	Mount.c	/^static BOOL CALLBACK SecurityTokenPreferencesDlgProc (HWND hwndDlg, UINT msg, WPARAM wParam, LPARAM lParam)$/;"	f	file:
+SelectContainer	Mount.c	/^static BOOL SelectContainer (HWND hwndDlg)$/;"	f	file:
+SelectItem	Mount.c	/^BOOL SelectItem (HWND hTree, char nLetter)$/;"	f
+SelectPartition	Mount.c	/^static BOOL SelectPartition (HWND hwndDlg)$/;"	f	file:
+ServiceMode	Mount.c	/^BOOL ServiceMode = FALSE;$/;"	v
+SetControls	Favorites.cpp	/^	static void SetControls (HWND hwndDlg, const FavoriteVolume &favorite, bool systemFavoritesMode, bool enable)$/;"	f	namespace:TrueCrypt
+SetDriverConfigurationFlag	Mount.c	/^void SetDriverConfigurationFlag (uint32 flag, BOOL state)$/;"	f
+SetDriverServiceStartType	MainCom.cpp	/^	virtual DWORD STDMETHODCALLTYPE SetDriverServiceStartType (DWORD startType)$/;"	f	class:TrueCryptMainCom
+SetFavoriteVolume	Favorites.cpp	/^	static void SetFavoriteVolume (HWND hwndDlg, FavoriteVolume &favorite, bool systemFavoritesMode)$/;"	f	namespace:TrueCrypt
+ShortcutInUse	Hotkeys.c	/^static BOOL ShortcutInUse (UINT vKeyCode, UINT modifiers, TCHOTKEY hotkeys[])$/;"	f	file:
+ShowSystemEncryptionStatus	Mount.c	/^static void ShowSystemEncryptionStatus (void)$/;"	f	file:
+StartSystemFavoritesService	Mount.c	/^static BOOL StartSystemFavoritesService ()$/;"	f	file:
+SysDriveOrPartitionFullyEncrypted	Mount.c	/^static BOOL SysDriveOrPartitionFullyEncrypted (BOOL bSilent)$/;"	f	file:
+SysEncDeviceActive	Mount.c	/^static BOOL SysEncDeviceActive (BOOL bSilent)$/;"	f	file:
+SysEncryptionOrDecryptionRequired	Mount.c	/^static BOOL SysEncryptionOrDecryptionRequired (void)$/;"	f	file:
+SystemCrashDetected	Mount.c	/^BOOL SystemCrashDetected = FALSE;$/;"	v
+SystemEncryption	Favorites.h	/^		bool SystemEncryption;$/;"	m	struct:TrueCrypt::FavoriteVolume
+SystemFavoriteVolumes	Favorites.cpp	/^	vector <FavoriteVolume> SystemFavoriteVolumes;$/;"	m	namespace:TrueCrypt	file:
+SystemFavorites	Favorites.h	/^		bool SystemFavorites;$/;"	m	struct:TrueCrypt::FavoriteVolumesDlgProcArguments
+SystemFavoritesServiceCtrlHandler	Mount.c	/^static VOID WINAPI SystemFavoritesServiceCtrlHandler (DWORD control)$/;"	f	file:
+SystemFavoritesServiceLogError	Mount.c	/^static void SystemFavoritesServiceLogError (const string &errorMessage)$/;"	f	file:
+SystemFavoritesServiceMain	Mount.c	/^static VOID WINAPI SystemFavoritesServiceMain (DWORD argc, LPTSTR *argv)$/;"	f	file:
+SystemFavoritesServiceSetStatus	Mount.c	/^static void SystemFavoritesServiceSetStatus (DWORD status, DWORD waitHint = 0)$/;"	f	file:
+SystemFavoritesServiceStatus	Mount.c	/^static SERVICE_STATUS SystemFavoritesServiceStatus;$/;"	v	file:
+SystemFavoritesServiceStatusHandle	Mount.c	/^static SERVICE_STATUS_HANDLE SystemFavoritesServiceStatusHandle;$/;"	v	file:
+TCBootLoaderOnInactiveSysEncDrive	Mount.c	/^BOOL TCBootLoaderOnInactiveSysEncDrive (void) $/;"	f
+TCHOTKEY	Hotkeys.h	/^} TCHOTKEY;$/;"	t	typeref:struct:__anon2
+TC_FAVORITE_MENU_CMD_ID_OFFSET	Mount.h	30;"	d
+TC_FAVORITE_MENU_CMD_ID_OFFSET_END	Mount.h	31;"	d
+TC_HEADER_MAIN_COM	MainCom.h	10;"	d
+TC_HEADER_Mount_FavoriteVolumes	Favorites.h	10;"	d
+TC_HIDDEN_OS_READ_ONLY_NOTIF_MODE_COMPACT	Mount.c	/^	TC_HIDDEN_OS_READ_ONLY_NOTIF_MODE_COMPACT,$/;"	e	enum:hidden_os_read_only_notif_mode	file:
+TC_HIDDEN_OS_READ_ONLY_NOTIF_MODE_DISABLED	Mount.c	/^	TC_HIDDEN_OS_READ_ONLY_NOTIF_MODE_DISABLED$/;"	e	enum:hidden_os_read_only_notif_mode	file:
+TC_HIDDEN_OS_READ_ONLY_NOTIF_MODE_NONE	Mount.c	/^	TC_HIDDEN_OS_READ_ONLY_NOTIF_MODE_NONE = 0,$/;"	e	enum:hidden_os_read_only_notif_mode	file:
+TC_MAIN_WINDOW_FLAG_ADMIN_PRIVILEGES	Mount.h	27;"	d
+TC_MLIST_ITEM_FREE	Mount.h	/^	TC_MLIST_ITEM_FREE = 0,$/;"	e	enum:mount_list_item_types
+TC_MLIST_ITEM_NONSYS_VOL	Mount.h	/^	TC_MLIST_ITEM_NONSYS_VOL,$/;"	e	enum:mount_list_item_types
+TC_MLIST_ITEM_SYS_DRIVE	Mount.h	/^	TC_MLIST_ITEM_SYS_DRIVE$/;"	e	enum:mount_list_item_types
+TC_MLIST_ITEM_SYS_PARTITION	Mount.h	/^	TC_MLIST_ITEM_SYS_PARTITION,$/;"	e	enum:mount_list_item_types
+TIMER_ID_KEYB_LAYOUT_GUARD	Mount.c	/^	TIMER_ID_KEYB_LAYOUT_GUARD$/;"	e	enum:timer_ids	file:
+TIMER_ID_MAIN	Mount.c	/^	TIMER_ID_MAIN = 0xff,$/;"	e	enum:timer_ids	file:
+TIMER_INTERVAL_KEYB_LAYOUT_GUARD	Mount.c	65;"	d	file:
+TIMER_INTERVAL_MAIN	Mount.c	64;"	d	file:
+TRAYICON_MENU_DRIVE_OFFSET	Mount.h	29;"	d
+TaskBarIconAdd	Mount.c	/^BOOL TaskBarIconAdd (HWND hwnd) $/;"	f
+TaskBarIconChange	Mount.c	/^BOOL TaskBarIconChange (HWND hwnd, int iconId) $/;"	f
+TaskBarIconMutex	Mount.c	/^static HANDLE TaskBarIconMutex = NULL;$/;"	v	file:
+TaskBarIconRemove	Mount.c	/^BOOL TaskBarIconRemove (HWND hwnd) $/;"	f
+TravelerDlgProc	Mount.c	/^BOOL CALLBACK TravelerDlgProc (HWND hwndDlg, UINT msg, WPARAM wParam, LPARAM lParam)$/;"	f
+TrueCrypt	Favorites.cpp	/^namespace TrueCrypt$/;"	n	file:
+TrueCrypt	Favorites.h	/^namespace TrueCrypt$/;"	n
+TrueCrypt	Mount.c	/^using namespace TrueCrypt;$/;"	v
+TrueCryptMainCom	MainCom.cpp	/^	TrueCryptMainCom (DWORD messageThreadId) : RefCount (0), MessageThreadId (messageThreadId)$/;"	f	class:TrueCryptMainCom
+TrueCryptMainCom	MainCom.cpp	/^class TrueCryptMainCom : public ITrueCryptMainCom$/;"	c	file:
+UacAnalyzeKernelMiniDump	MainCom.cpp	/^extern "C" void UacAnalyzeKernelMiniDump (HWND hwndDlg)$/;"	f
+UacBackupVolumeHeader	MainCom.cpp	/^extern "C" int UacBackupVolumeHeader (HWND hwndDlg, BOOL bRequireConfirmation, char *lpszVolume)$/;"	f
+UacChangePwd	MainCom.cpp	/^extern "C" int UacChangePwd (char *lpszVolume, Password *oldPassword, Password *newPassword, int pkcs5, HWND hwndDlg)$/;"	f
+UacRestoreVolumeHeader	MainCom.cpp	/^extern "C" int UacRestoreVolumeHeader (HWND hwndDlg, char *lpszVolume)$/;"	f
+UnregisterAllHotkeys	Hotkeys.c	/^void UnregisterAllHotkeys (HWND hwndDlg, TCHOTKEY hotkeys[])$/;"	f
+UpdateDeviceHostedFavoriteVolumes	Favorites.cpp	/^	void UpdateDeviceHostedFavoriteVolumes ()$/;"	f	namespace:TrueCrypt
+UsePreferences	Mount.c	/^BOOL UsePreferences = TRUE;$/;"	v
+VOLUME_NOTIFICATIONS_LIST	Mount.h	/^} VOLUME_NOTIFICATIONS_LIST;$/;"	t	typeref:struct:__anon4
+VerifyRescueDisk	Mount.c	/^static void VerifyRescueDisk (void)$/;"	f	file:
+VolumeNotificationsList	Mount.c	/^VOLUME_NOTIFICATIONS_LIST	VolumeNotificationsList;	$/;"	v
+VolumePassword	Mount.c	/^Password VolumePassword;			\/* Password used for mounting volumes *\/$/;"	v
+VolumePathId	Favorites.h	/^		string VolumePathId;$/;"	m	struct:TrueCrypt::FavoriteVolume
+VolumePropertiesDlgProc	Mount.c	/^BOOL CALLBACK VolumePropertiesDlgProc (HWND hwndDlg, UINT msg, WPARAM wParam, LPARAM lParam)$/;"	f
+VolumeSelected	Mount.c	/^BOOL VolumeSelected (HWND hwndDlg)$/;"	f
+WM_COPY_SET_VOLUME_NAME	Mount.h	33;"	d
+WholeSysDriveEncryption	Mount.c	/^BOOL WholeSysDriveEncryption (BOOL bSilent)$/;"	f
+WinMain	Mount.c	/^int WINAPI WinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, char *lpszCommandLine, int nCmdShow)$/;"	f
+WipeCache	Mount.c	/^static void WipeCache (HWND hwndDlg, BOOL silent)$/;"	f	file:
+WriteLocalMachineRegistryDwordValue	MainCom.cpp	/^	virtual DWORD STDMETHODCALLTYPE WriteLocalMachineRegistryDwordValue (BSTR keyPath, BSTR valueName, DWORD value)$/;"	f	class:TrueCryptMainCom
+_APS_NEXT_COMMAND_VALUE	Resource.h	230;"	d
+_APS_NEXT_CONTROL_VALUE	Resource.h	231;"	d
+_APS_NEXT_RESOURCE_VALUE	Resource.h	229;"	d
+_APS_NEXT_SYMED_VALUE	Resource.h	232;"	d
+_APS_NO_MFC	Resource.h	228;"	d
+bAuto	Mount.c	/^BOOL bAuto = FALSE;					\/* Do everything without user input *\/$/;"	v
+bAutoMountDevices	Mount.c	/^BOOL bAutoMountDevices = FALSE;		\/* Auto-mount devices *\/$/;"	v
+bAutoMountFavorites	Mount.c	/^BOOL bAutoMountFavorites = FALSE;$/;"	v
+bBeep	Mount.c	/^BOOL bBeep = FALSE;					\/* Donot beep after mount *\/$/;"	v
+bCacheInDriver	Mount.c	/^BOOL bCacheInDriver = FALSE;		\/* Cache any passwords we see *\/$/;"	v
+bCacheInDriverDefault	Mount.c	/^BOOL bCacheInDriverDefault = FALSE;$/;"	v
+bCloseBkgTaskWhenNoVolumes	Mount.c	/^BOOL bCloseBkgTaskWhenNoVolumes = FALSE;$/;"	v
+bCloseDismountedWindows	Mount.c	/^BOOL bCloseDismountedWindows=TRUE;	\/* Close all open explorer windows of dismounted volume *\/$/;"	v
+bDismountOnLogOff	Mount.c	/^BOOL bDismountOnLogOff = TRUE;$/;"	v
+bDismountOnPowerSaving	Mount.c	/^BOOL bDismountOnPowerSaving = FALSE;$/;"	v
+bDismountOnScreenSaver	Mount.c	/^BOOL bDismountOnScreenSaver = TRUE;$/;"	v
+bDisplayBalloonOnSuccessfulHkDismount	Mount.c	/^BOOL bDisplayBalloonOnSuccessfulHkDismount = TRUE;$/;"	v
+bEnableBkgTask	Mount.c	/^BOOL bEnableBkgTask = FALSE;$/;"	v
+bExplore	Mount.c	/^BOOL bExplore = FALSE;				\/* Display explorer window after mount *\/$/;"	v
+bForceAutoDismount	Mount.c	/^BOOL bForceAutoDismount = TRUE;$/;"	v
+bForceMount	Mount.c	/^BOOL bForceMount = FALSE;			\/* Mount volume even if host file\/device already in use *\/$/;"	v
+bForceUnmount	Mount.c	/^BOOL bForceUnmount = FALSE;			\/* Unmount volume even if it cannot be locked *\/$/;"	v
+bHibernationPreventionNotified	Mount.c	/^BOOL bHibernationPreventionNotified = FALSE;	\/* TRUE if the user has been notified that hibernation was prevented (system encryption) during the session. *\/$/;"	v
+bHidVolDamagePrevReported	Mount.h	/^	BOOL bHidVolDamagePrevReported[26];$/;"	m	struct:__anon4
+bHiddenSysLeakProtNotifiedDuringSession	Mount.c	/^BOOL bHiddenSysLeakProtNotifiedDuringSession = FALSE;	\/* TRUE if the user has been notified during the session that unencrypted filesystems and non-hidden TrueCrypt volumes are mounted as read-only under hidden OS. *\/$/;"	v
+bHistoryCmdLine	Mount.c	/^BOOL bHistoryCmdLine = FALSE;		\/* History control is always disabled *\/$/;"	v
+bKeybLayoutAltKeyWarningShown	Mount.c	/^BOOL bKeybLayoutAltKeyWarningShown = FALSE;	\/* TRUE if the user has been informed that it is not possible to type characters by pressing keys while the right Alt key is held down. *\/ $/;"	v
+bKeyboardLayoutChanged	Mount.c	/^BOOL bKeyboardLayoutChanged = FALSE;		\/* TRUE if the keyboard layout was changed to the standard US keyboard layout (from any other layout). *\/ $/;"	v
+bPlaySoundOnSuccessfulHkDismount	Mount.c	/^BOOL bPlaySoundOnSuccessfulHkDismount = TRUE;$/;"	v
+bPrebootPasswordDlgMode	Mount.c	/^static int bPrebootPasswordDlgMode = FALSE;$/;"	v	file:
+bSysEncPwdChangeDlgMode	Mount.c	/^static int bSysEncPwdChangeDlgMode = FALSE;$/;"	v	file:
+bUseDifferentTrayIconIfVolMounted	Mount.c	/^BOOL bUseDifferentTrayIconIfVolMounted = TRUE;$/;"	v
+bWipe	Mount.c	/^BOOL bWipe = FALSE;					\/* Wipe driver passwords *\/$/;"	v
+bWipeCacheOnAutoDismount	Mount.c	/^BOOL bWipeCacheOnAutoDismount = TRUE;$/;"	v
+bWipeCacheOnExit	Mount.c	/^BOOL bWipeCacheOnExit = FALSE;		\/* Wipe password from chace on exit *\/$/;"	v
+cmdUnmountDrive	Mount.c	/^int cmdUnmountDrive = 0;			\/* Volume drive letter to unmount (-1 = all) *\/$/;"	v
+commandLineDrive	Mount.c	/^char commandLineDrive = 0;$/;"	v
+currentVKeyCode	Hotkeys.c	/^static UINT currentVKeyCode;$/;"	v	file:
+defaultMountOptions	Mount.c	/^MountOptions defaultMountOptions;$/;"	v
+hbmLogoBitmapRescaled	Mount.c	/^HBITMAP hbmLogoBitmapRescaled = NULL;$/;"	v
+hidVolProtKeyFilesParam	Mount.c	/^static KeyFilesDlgParam				hidVolProtKeyFilesParam;$/;"	v	file:
+hidden_os_read_only_notif_mode	Mount.c	/^enum hidden_os_read_only_notif_mode$/;"	g	file:
+localcleanup	Mount.c	/^static void localcleanup (void)$/;"	f	file:
+mountOptions	Mount.c	/^MountOptions mountOptions;$/;"	v
+mount_list_item_types	Mount.h	/^enum mount_list_item_types$/;"	g
+nCurrentShowType	Mount.c	/^int nCurrentShowType = 0;			\/* current display mode, mount, unmount etc *\/$/;"	v
+nSelectedDriveIndex	Mount.c	/^int nSelectedDriveIndex = -1;		\/* Item number of selected drive *\/$/;"	v
+nSelectedHotkeyId	Hotkeys.c	/^static int nSelectedHotkeyId;$/;"	v	file:
+pwdChangeDlgMode	Mount.c	/^static int pwdChangeDlgMode	= PCDM_CHANGE_PASSWORD;$/;"	v	file:
+szDriveLetter	Mount.c	/^char szDriveLetter[3];				\/* Drive Letter to mount *\/$/;"	v
+szFileName	Mount.c	/^char szFileName[TC_MAX_PATH+1];		\/* Volume to mount *\/$/;"	v
+timer_ids	Mount.c	/^enum timer_ids$/;"	g	file:
+tmpHotkeys	Hotkeys.c	/^static TCHOTKEY	tmpHotkeys [NBR_HOTKEYS];$/;"	v	file:
+vKeyCode	Hotkeys.h	/^	UINT vKeyCode;$/;"	m	struct:__anon2
+vKeyModifiers	Hotkeys.h	/^	UINT vKeyModifiers;$/;"	m	struct:__anon2
+~TrueCryptMainCom	MainCom.cpp	/^	~TrueCryptMainCom ()$/;"	f	class:TrueCryptMainCom

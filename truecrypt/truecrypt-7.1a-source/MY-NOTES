@@ -1,0 +1,11 @@
+            New Volume
+                |
+---------------------------------------
+   |                        |
+   |                        |
+   v                        v
+Password               Use key files
+   |                        |
+   |--> Token pass          |---> Add Token Files
+   v                        v
+Normal pass           Add file(s)/path

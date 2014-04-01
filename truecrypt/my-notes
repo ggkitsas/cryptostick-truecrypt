@@ -1,0 +1,57 @@
+----------------------------------------------------------------------------------------------------
+Use cases ------------------------------------------------------------------------------------------
+
+
+            New Volume
+                |
+---------------------------------------
+   |                        |
+   |                        |
+   v                        v
+Password               Use key files
+   |                        |
+   |--> Token pass          |---> Add Token Files
+   v                        v
+Normal pass           Add file(s)/path
+
+
+
+
+
+----------------------------------------------------------------------------------------------------
+Mount procedure ------------------------------------------------------------------------------------
+
+
+|user password |   KDF   | header encryption key | Decrypt Header | Master primary key   | Decr Volume
+|keyfile(s)    |-------> | header secondary key  | -------------> | Master secondary key |-------------> 
+|header salt   |         |                       |                |                      |
+
+
+
+
+
+----------------------------------------------------------------------------------------------------
+TC mail --------------------------------------------------------------------------------------------
+
+Smart card master key(s)
+
+Hello,
+
+My name is George. I'm very interested in information security.
+I will be participating in this years Google summer of code and 
+my project of choice is to add some more functionality for 
+security tokens to True Crypt (or fork).
+
+For the project description see 
+https://www.assembla.com/spaces/cryptostick/wiki/Ideas
+under the title "True Crypt Improvement".
+
+Some notes about the project description:
+There is some misunderstanding about keyfiles at 
+"simply stores the volume key in plaintext (called keyfile)".
+Also for clarification, the "volume key" refers to master key(s).
+
+Are you interested in this feature?
+
+Best regards
+
