@@ -14,3 +14,11 @@ truecrypt/truecrypt-7.1a-source/Main/SystemPrecompiled.h.gch
 truecrypt/truecrypt-7.1a-source/Mount/Drive_icon_96dpi.bmp.h
 truecrypt/truecrypt-7.1a-source/Mount/Drive_icon_mask_96dpi.bmp.h
 truecrypt/truecrypt-7.1a-source/Mount/Logo_96dpi.bmp.h
+
+cryptostick/cryptostick.oath/CryptoStickGUI.pro.user*
+cryptostick/cryptostick.oath/build-*-Debug
+cryptostick/cryptostick.oath/*~
+cryptostick/cryptostick.oath/*.o
+cryptostick/cryptostick.oath/*.lst
+cryptostick/cryptostick.oath/.*
+cryptostick/cryptostick.oath/!/.gitignore
