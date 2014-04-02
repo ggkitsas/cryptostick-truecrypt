@@ -1,7 +1,7 @@
 ROOT_DIR=$(CURDIR)
 CRYPTO_DIR=cryptostick.oath
 BUILD_DIR=$(CRYPTO_DIR)/firmware/build/gcc
-QEMU_DIR=~/Projects/qemu/qemu_stm32/qemu_stm32/arm-softmmu/
+QEMU_DIR=../qemu/qemu_stm32/arm-softmmu/
 MEM=128
 
 setup:
