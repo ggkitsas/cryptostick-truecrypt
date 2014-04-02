@@ -10,12 +10,17 @@ setup:
 	sudo apt-get install $(DEPS)
 	wget http://sourceforge.net/projects/wxwindows/files/2.8.12/wxGTK-2.8.12.tar.gz
 	tar -xvf wxGTK-2.8.12.tar.gz
-
-wxwidgets:
 	cd $(TRUECRYPT_DIR) && \
-        make -j$(J) WX_ROOT=$(WXWIDGETS_DIR) wxbuild
+	make -j$(J) WX_ROOT=$(WXWIDGETS_DIR) wxbuild
 
-truecrypt: wxwidgets
+#wxwidgets:
+#	cd $(TRUECRYPT_DIR) && \
+#        make -j$(J) WX_ROOT=$(WXWIDGETS_DIR) wxbuild
+
+truecrypt:
 	cd $(TRUECRYPT_DIR) && \
 	make -j$(J) PKCS11_INC=$(ROOT_DIR)/pkcs-11
 
+clean:
+	cd $(TRUECRYPT_DIR) && \
+	make clean
