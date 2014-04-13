@@ -18,6 +18,9 @@ emulate:
 	$(QEMU_DIR)/qemu-system-arm  -M stm32-p103 -kernel $(BUILD_DIR)/crypto.elf -serial stdio -monitor stdio -usb
 #	qemu-system-arm -M stm32-p103 -kernel
 
+emulate-pty:
+	$(QEMU_DIR)/qemu-system-arm -M stm32-p103 -kernel $(BUILD_DIR)/crypto.elf -serial pty -monitor stdio
+
 debug:
 	$(QEMU_DIR)/qemu-system-arm  -M stm32-p103 -s -S -kernel $(BUILD_DIR)/crypto.elf
 
