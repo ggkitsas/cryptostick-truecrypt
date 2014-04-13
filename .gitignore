@@ -26,6 +26,7 @@ cryptostick/cryptostick.oath/!/.gitignore
 
 qemu/qemu_stm32/roms/seabios/
 qemu/qemu_stm32/roms/vgabios/
+qemu/stm32_p103_demos/
 
 # EXPERIMENTAL
 openfirmware/
