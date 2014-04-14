@@ -6,6 +6,10 @@
  packages.
 */
 
+#ifdef MY_DEBUG
+#include <stdio.h>
+#endif
+
 #include "Platform/Finally.h"
 #include "Platform/ForEach.h"
 
@@ -420,8 +424,13 @@ namespace TrueCrypt
 		else if (Sessions[slotId].UserLoggedIn)
 			return;
 
+#ifdef MY_DEBUG
+		printf("DEBUG:Before login\n");
+#endif
 		CK_RV status = Pkcs11Functions->C_Login (Sessions[slotId].Handle, CKU_USER, (CK_CHAR_PTR) pin.c_str(), pin.size());
-
+#ifdef MY_DEBUG
+		printf("DEBUG:After login\n");
+#endif
 		if (status != CKR_OK)
 			throw Pkcs11Exception (status);
 
