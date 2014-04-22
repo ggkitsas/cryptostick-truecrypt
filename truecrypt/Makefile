@@ -21,8 +21,8 @@ truecrypt:
 	cd $(TRUECRYPT_DIR) && \
 	make -j$(J) PKCS11_INC=$(ROOT_DIR)/pkcs-11
 
-sw-token:
-	sudo apt-get install opencryptoki opencryptoki-dev
+#sw-token:
+	#sudo apt-get install opencryptoki opencryptoki-dev libopencryptoki0
 	# kill pkcsslotd
 	# sudo pkcs11_startup
 	# Edit /var/lib/opencryptoki/pk_config_data , first line should be the libpkcs11_sw.so
