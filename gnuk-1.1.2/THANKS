@@ -1,0 +1,23 @@
+							-*- coding: utf-8 -*-
+
+We would like to express our gratitudes to Werner Koch for GnuPG, and
+Giovanni Di Sirio for ChibiOS/RT.
+
+Gnuk was originally written by NIIBE Yutaka.  People contributed by
+encouraging the development, testing the implementation, suggesting
+improvements, or fixing bugs.  Here is a list of those people.
+
+Achim Pietig		achim@pietig.com
+Andre Zepezauer		andre.zepezauer@student.uni-halle.de
+Hironobu SUZUKI		hironobu@h2np.net
+Jan Suhr		jan@suhr.info
+Kaz Kojima		kkojima@rr.iij4u.or.jp
+Ludovic Rousseau	ludovic.rousseau@free.fr
+Luis Felipe R. Murillo	luisfelipe@ucla.edu
+MATSUU Takuto		matsuu@gentoo.org
+NAGAMI Takeshi		nagami-takeshi@aist.go.jp
+Nguyễn Hồng Quân	quannguyen@mbm.vn
+Paul Bakker		polarssl_maintainer@polarssl.org
+Shane Coughlan		scoughlan@openinventionnetwork.com
+Vasily Evseenko
+Werner Koch		wk@gnupg.org
