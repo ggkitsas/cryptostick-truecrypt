@@ -24,9 +24,14 @@ cryptostick/cryptostick.oath/*.lst
 cryptostick/cryptostick.oath/.*
 cryptostick/cryptostick.oath/!/.gitignore
 
+qemu/
 qemu/qemu_stm32/roms/seabios/
 qemu/qemu_stm32/roms/vgabios/
 qemu/stm32_p103_demos/
+
+chopstx-chopstx.tar.gz
+gnuk-1.1.2.tar.gz
+
 
 # EXPERIMENTAL
 openfirmware/
