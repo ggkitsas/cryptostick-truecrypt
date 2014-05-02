@@ -18,13 +18,10 @@ Tasks Involved:
 ----- Folder structure
   truecrypt:
     contains: 	truecrypt sources
-		wxwidgets sources needed to build truecrypt
-		pkcs11 headers
+				wxwidgets sources needed to build truecrypt
+				pkcs11 headers
   cryptostick:
     Here lives cryptostick firmware and client sources
-
-  qemu (EXPERIMENTAL):
-    Subproject for setting up qemu to emulate cryptostick firmware as a usb security token plugged in the host system
 
   docs:
    Contains needed documentation for the project
