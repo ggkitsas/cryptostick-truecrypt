@@ -687,6 +687,7 @@ int CreateVolumeHeaderInMemory (BOOL bBoot, char *header, int ea, int mode, Pass
 		   unsigned __int64 volumeSize, unsigned __int64 hiddenVolumeSize,
 		   unsigned __int64 encryptedAreaStart, unsigned __int64 encryptedAreaLength, uint16 requiredProgramVersion, uint32 headerFlags, uint32 sectorSize, BOOL bWipeMode)
 {
+printf("CreateVolumeHeaderInMemory\n");
 	unsigned char *p = (unsigned char *) header;
 	static KEY_INFO keyInfo;
 

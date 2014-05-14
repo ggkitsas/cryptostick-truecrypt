@@ -16,6 +16,8 @@
 #include <unistd.h>
 #endif
 
+#include <stdio.h>
+
 #include "VolumeCreator.h"
 #include "FatFormatter.h"
 
@@ -176,6 +178,7 @@ namespace TrueCrypt
 
 	void VolumeCreator::CreateVolume (shared_ptr <VolumeCreationOptions> options)
 	{
+		printf("CreateVolume: options->Size=%d\n",options->Size);
 		EncryptionTest::TestAll();
 
 		{

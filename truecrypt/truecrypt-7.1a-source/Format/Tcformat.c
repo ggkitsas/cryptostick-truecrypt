@@ -4838,6 +4838,7 @@ BOOL CALLBACK PageDialogProc (HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lPa
 					CreateFullVolumePath (szDiskFile, szFileName, &tmpbDevice);
 
 					nVolumeSize = GetDeviceSize (szDiskFile);
+					printf("1.nVolumeSize=%d\n",nVolumeSize);
 					if (nVolumeSize == -1)
 					{
 						handleWin32Error (MainDlg);
@@ -6542,6 +6543,7 @@ BOOL CALLBACK MainDialogProc (HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lPa
 
 					// We are going to skip the Size page so we must get the size here
 					nVolumeSize = GetDeviceSize (szDiskFile);
+					printf("2.nVolumeSize=%d\n",nVolumeSize);
 
 					if (nVolumeSize == -1)
 					{
@@ -6888,6 +6890,7 @@ BOOL CALLBACK MainDialogProc (HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lPa
 						CreateFullVolumePath (szDiskFile, DeferredNonSysInPlaceEncDevices.front().Path.c_str(), &tmpbDevice);
 
 						nVolumeSize = GetDeviceSize (szDiskFile);
+						printf("3.nVolumeSize=%d\n",nVolumeSize);
 						if (nVolumeSize == -1)
 						{
 							handleWin32Error (MainDlg);
@@ -8055,6 +8058,8 @@ int DetermineMaxHiddenVolSize (HWND hwndDlg)
 
 	nUIVolumeSize = 0;								// Set the initial value for the hidden volume size input field to the max
 	nVolumeSize = nUIVolumeSize * nMultiplier;		// Chop off possible remainder
+
+	printf("4.nVolumeSize=%d\n",nVolumeSize);
 
 	return 1;
 }

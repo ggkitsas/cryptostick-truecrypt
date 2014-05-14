@@ -124,7 +124,7 @@ int TCFormatVolume (volatile FORMAT_VOL_PARAMETERS *volParams)
 	}
 
 	dataAreaSize = GetVolumeDataAreaSize (volParams->hiddenVol, volParams->size);
-
+	printf("TCFormatVolume:dataAreaSize=%d\n",dataAreaSize);
 	num_sectors = dataAreaSize / FormatSectorSize;
 
 	if (volParams->bDevice)
