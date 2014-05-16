@@ -3363,6 +3363,7 @@ static int AskVolumePassword (HWND hwndDlg, Password *password, char *titleStrin
 
 static BOOL Mount (HWND hwndDlg, int nDosDriveNo, char *szFileName)
 {
+printf("Mount\n");
 	BOOL status = FALSE;
 	char fileName[MAX_PATH];
 	int mounted = 0, modeOfOperation;

@@ -20,6 +20,8 @@
 #include "CoreServiceRequest.h"
 #include "CoreServiceResponse.h"
 
+#include <stdio.h>
+
 namespace TrueCrypt
 {
 	template <class T>
@@ -262,6 +264,7 @@ namespace TrueCrypt
 	
 	shared_ptr <VolumeInfo> CoreService::RequestMountVolume (MountOptions &options)
 	{
+printf("CoreService::RequestMountVolume\n");
 		MountVolumeRequest request (&options);
 		return SendRequest <MountVolumeResponse> (request)->MountedVolumeInfo;
 	}

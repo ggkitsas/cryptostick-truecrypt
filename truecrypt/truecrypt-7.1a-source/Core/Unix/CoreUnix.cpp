@@ -392,6 +392,7 @@ namespace TrueCrypt
 
 	shared_ptr <VolumeInfo> CoreUnix::MountVolume (MountOptions &options)
 	{
+printf("CoreUnix::MountVolume\n");
 		CoalesceSlotNumberAndMountPoint (options);
 
 		if (IsVolumeMounted (*options.Path))

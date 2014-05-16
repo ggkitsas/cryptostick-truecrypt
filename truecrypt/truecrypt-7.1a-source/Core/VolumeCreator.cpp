@@ -256,10 +256,12 @@ namespace TrueCrypt
 
 			headerOptions.SectorSize = options->SectorSize;
 
+// Master key scope offset is set here:
 			if (options->Type == VolumeType::Hidden)
 				headerOptions.VolumeDataStart = HostSize - Layout->GetHeaderSize() * 2 - options->Size;
 			else
 				headerOptions.VolumeDataStart = Layout->GetHeaderSize() * 2;
+			
 
 			headerOptions.VolumeDataSize = Layout->GetMaxDataSize (options->Size);
 

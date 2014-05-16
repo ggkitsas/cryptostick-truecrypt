@@ -136,7 +136,7 @@ int TCFormatVolume (volatile FORMAT_VOL_PARAMETERS *volParams)
 	}
 
 	VirtualLock (header, sizeof (header));
-
+	printf("TCFormatVolume\n");
 	nStatus = CreateVolumeHeaderInMemory (FALSE,
 				     header,
 				     volParams->ea,

@@ -646,6 +646,7 @@ namespace TrueCrypt
 
 	shared_ptr <VolumeInfo> GraphicUserInterface::MountVolume (MountOptions &options) const
 	{
+printf("GraphicUserInterface::MountVolume\n");
 		CheckRequirementsForMountingVolume();
 
 		shared_ptr <VolumeInfo> volume;
