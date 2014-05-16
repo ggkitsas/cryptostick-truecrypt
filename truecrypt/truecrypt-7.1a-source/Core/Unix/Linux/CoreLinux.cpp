@@ -289,6 +289,7 @@ namespace TrueCrypt
 
 	void CoreLinux::MountVolumeNative (shared_ptr <Volume> volume, MountOptions &options, const DirectoryPath &auxMountPoint) const
 	{
+		printf("CoreLinux::MountVolumeNative\n");
 		bool xts = (typeid (*volume->GetEncryptionMode()) == typeid (EncryptionModeXTS));
 		bool lrw = (typeid (*volume->GetEncryptionMode()) == typeid (EncryptionModeLRW));
 

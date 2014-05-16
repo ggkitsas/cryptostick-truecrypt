@@ -639,6 +639,7 @@ namespace TrueCrypt
 
 	void MainFrame::MountVolume ()
 	{
+	printf("MainFrame::MountVolume\n");
 		if (!IsFreeSlotSelected())
 		{
 			Gui->ShowWarning (_("Please select a free drive slot from the list."));

@@ -725,6 +725,7 @@ namespace TrueCrypt
 
 	shared_ptr <VolumeInfo> UserInterface::MountVolume (MountOptions &options) const
 	{
+printf("UserInterface::MountVolume\n");
 		shared_ptr <VolumeInfo> volume;
 
 		try

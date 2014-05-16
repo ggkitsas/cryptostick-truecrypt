@@ -64,6 +64,7 @@ namespace TrueCrypt
 
 		virtual shared_ptr <VolumeInfo> MountVolume (MountOptions &options)
 		{
+printf("CoreServiceProxy.h->MountVolume\n");
 			shared_ptr <VolumeInfo> mountedVolume;
 
 			if (!VolumePasswordCache::IsEmpty()

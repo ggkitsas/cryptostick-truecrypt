@@ -5976,6 +5976,8 @@ int MountVolume (HWND hwndDlg,
 	char root[MAX_PATH];
 	int favoriteMountOnArrivalRetryCount = 0;
 
+	print("MountVolume\n");
+	
 #ifdef TCMOUNT
 	if (mountOptions->PartitionInInactiveSysEncScope)
 	{
