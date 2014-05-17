@@ -14,7 +14,7 @@ setup:
 	wget http://sourceforge.net/projects/wxwindows/files/2.8.12/wxGTK-2.8.12.tar.gz
 	tar -xvf wxGTK-2.8.12.tar.gz
 	cd $(TRUECRYPT_DIR) && \
-	make -j$(J)  WX_ROOT=$(WXWIDGETS_DIR) wxbuild
+	make -j$(J) WXSTATIC=1 WX_ROOT=$(WXWIDGETS_DIR) wxbuild
 
 wxwidgets:
 	cd $(TRUECRYPT_DIR) && \
