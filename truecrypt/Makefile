@@ -23,7 +23,7 @@ wxwidgets:
 
 truecrypt:
 	cd $(TRUECRYPT_DIR) && \
-	make -j$(J) WXSTATIC=1 PKCS11_INC=$(ROOT_DIR)/pkcs-11
+	make -j$(J) PKCS11_INC=$(ROOT_DIR)/pkcs-11
 
 #sw-token:
 	#sudo apt-get install opencryptoki opencryptoki-dev libopencryptoki0
