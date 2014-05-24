@@ -953,8 +953,8 @@ namespace TrueCrypt
 			wxCheckBox* CacheCheckBox;
 			wxCheckBox* DisplayPasswordCheckBox;
 			wxCheckBox* UseKeyfilesCheckBox;
-			wxCheckBox* UseSmartcardCheckBox;
-			wxButton* SmartcardButton;
+			wxCheckBox* UseSecurityTokenCheckBox;
+			wxButton* SecurityTokenButton;
 			wxButton* KeyfilesButton;
 			wxBoxSizer* Pkcs5PrfSizer;
 			wxStaticText* Pkcs5PrfStaticText;
@@ -968,8 +968,8 @@ namespace TrueCrypt
 			virtual void OnKeyfilesButtonClick( wxCommandEvent& event ){ event.Skip(); }
 			virtual void OnKeyfilesButtonRightDown( wxMouseEvent& event ){ event.Skip(); }
 			virtual void OnKeyfilesButtonRightClick( wxMouseEvent& event ){ event.Skip(); }
-			virtual void OnUseSmartcardCheckBoxClick( wxCommandEvent& event){event.Skip(); }
-			virtual void OnSmartcardsButtonClick(wxMouseEvent& event ){ event.Skip(); }
+			virtual void OnUseSecurityTokenCheckBoxClick( wxCommandEvent& event){event.Skip(); }
+			virtual void OnSecurityTokensButtonClick(wxMouseEvent& event ){ event.Skip(); }
 			
 		
 		public:

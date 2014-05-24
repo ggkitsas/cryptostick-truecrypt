@@ -48,8 +48,8 @@ namespace TrueCrypt
 		void OnUseKeyfilesCheckBoxClick (wxCommandEvent& event) { OnUpdate(); }
 		void WipeTextCtrl (wxTextCtrl *textCtrl);
 
-		void OnUseSmartcardCheckBoxClick (wxCommandEvent& event) { printf("OnUseKeyfilesCheckBoxClick\n"); OnUpdate(); }
-		void OnSmartcardsButtonClick (wxMouseEvent& event);
+		void OnUseSecurityTokenCheckBoxClick (wxCommandEvent& event) { printf("OnUseSecurityTokenCheckBoxClick\n"); OnUpdate(); }
+		void OnSecurityTokensButtonClick (wxMouseEvent& event);
 
 		shared_ptr <KeyfileList> Keyfiles;
 		shared_ptr <Functor> UpdateCallback;

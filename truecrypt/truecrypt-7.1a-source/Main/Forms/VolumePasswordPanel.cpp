@@ -298,9 +298,10 @@ namespace TrueCrypt
 #endif
 	}
 
-	void VolumePasswordPanel::OnSmartcardsButtonClick (wxMouseEvent& event)
+	void VolumePasswordPanel::OnSecurityTokensButtonClick (wxMouseEvent& event)
 	{
-		printf("OnSmartcardBottonClick\n");
+		printf("OnSecurityTokensButtonClick\n");
+		
 	}
 
 	bool VolumePasswordPanel::PasswordsMatch () const

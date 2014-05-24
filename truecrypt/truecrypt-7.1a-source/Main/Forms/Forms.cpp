@@ -2926,10 +2926,10 @@ VolumePasswordPanelBase::VolumePasswordPanelBase( wxWindow* parent, wxWindowID i
 	GridBagSizer->Add( DisplayPasswordCheckBox, wxGBPosition( 4, 1 ), wxGBSpan( 1, 2 ), wxTOP|wxBOTTOM|wxLEFT|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	// Smart card GUI options
-	UseSmartcardCheckBox = new wxCheckBox( this, wxID_ANY, _("Use smart card"), wxDefaultPosition, wxDefaultSize, 0 );
-	GridBagSizer->Add( UseSmartcardCheckBox, wxGBPosition( 5, 1 ), wxGBSpan( 1, 1), wxTOP|wxBOTTOM|wxLEFT|wxALIGN_CENTER_VERTICAL, 5 );
-	SmartcardButton = new wxButton( this, wxID_ANY, _("Smart cards..."), wxDefaultPosition, wxDefaultSize, 0 );
-	GridBagSizer->Add( SmartcardButton, wxGBPosition( 5, 2 ), wxGBSpan( 1, 1 ), wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL|wxLEFT, 5 );
+	UseSecurityTokenCheckBox = new wxCheckBox( this, wxID_ANY, _("Use security token"), wxDefaultPosition, wxDefaultSize, 0 );
+	GridBagSizer->Add( UseSecurityTokenCheckBox, wxGBPosition( 5, 1 ), wxGBSpan( 1, 1), wxTOP|wxBOTTOM|wxLEFT|wxALIGN_CENTER_VERTICAL, 5 );
+	SecurityTokenButton = new wxButton( this, wxID_ANY, _("Security tokens..."), wxDefaultPosition, wxDefaultSize, 0 );
+	GridBagSizer->Add( SecurityTokenButton, wxGBPosition( 5, 2 ), wxGBSpan( 1, 1 ), wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL|wxLEFT, 5 );
 
 	UseKeyfilesCheckBox = new wxCheckBox( this, wxID_ANY, _("U&se keyfiles"), wxDefaultPosition, wxDefaultSize, 0 );
 //	GridBagSizer->Add( UseKeyfilesCheckBox, wxGBPosition( 5, 1 ), wxGBSpan( 1, 1 ), wxTOP|wxRIGHT|wxLEFT, 5 );
@@ -2974,8 +2974,8 @@ VolumePasswordPanelBase::VolumePasswordPanelBase( wxWindow* parent, wxWindowID i
 	KeyfilesButton->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( VolumePasswordPanelBase::OnKeyfilesButtonClick ), NULL, this );
 	KeyfilesButton->Connect( wxEVT_RIGHT_DOWN, wxMouseEventHandler( VolumePasswordPanelBase::OnKeyfilesButtonRightDown ), NULL, this );
 	KeyfilesButton->Connect( wxEVT_RIGHT_UP, wxMouseEventHandler( VolumePasswordPanelBase::OnKeyfilesButtonRightClick ), NULL, this );
-	UseSmartcardCheckBox->Connect( wxEVT_COMMAND_CHECKBOX_CLICKED, wxCommandEventHandler( VolumePasswordPanelBase::OnUseSmartcardCheckBoxClick  ), NULL, this );
-	SmartcardButton->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxMouseEventHandler( VolumePasswordPanelBase::OnSmartcardsButtonClick ), NULL, this );
+	UseSecurityTokenCheckBox->Connect( wxEVT_COMMAND_CHECKBOX_CLICKED, wxCommandEventHandler( VolumePasswordPanelBase::OnUseSecurityTokenCheckBoxClick  ), NULL, this );
+	SecurityTokenButton->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxMouseEventHandler( VolumePasswordPanelBase::OnSecurityTokensButtonClick ), NULL, this );
 }
 
 VolumePasswordPanelBase::~VolumePasswordPanelBase()
@@ -2988,8 +2988,8 @@ VolumePasswordPanelBase::~VolumePasswordPanelBase()
 	KeyfilesButton->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( VolumePasswordPanelBase::OnKeyfilesButtonClick ), NULL, this );
 	KeyfilesButton->Disconnect( wxEVT_RIGHT_DOWN, wxMouseEventHandler( VolumePasswordPanelBase::OnKeyfilesButtonRightDown ), NULL, this );
 	KeyfilesButton->Disconnect( wxEVT_RIGHT_UP, wxMouseEventHandler( VolumePasswordPanelBase::OnKeyfilesButtonRightClick ), NULL, this );
-	UseSmartcardCheckBox->Disconnect( wxEVT_COMMAND_CHECKBOX_CLICKED, wxCommandEventHandler( VolumePasswordPanelBase::OnUseSmartcardCheckBoxClick ), NULL, this );
-	SmartcardButton->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxMouseEventHandler( VolumePasswordPanelBase::OnSmartcardsButtonClick ), NULL, this );
+	UseSecurityTokenCheckBox->Disconnect( wxEVT_COMMAND_CHECKBOX_CLICKED, wxCommandEventHandler( VolumePasswordPanelBase::OnUseSecurityTokenCheckBoxClick ), NULL, this );
+	SecurityTokenButton->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxMouseEventHandler( VolumePasswordPanelBase::OnSecurityTokensButtonClick ), NULL, this );
 }
 
 VolumePasswordWizardPageBase::VolumePasswordWizardPageBase( wxWindow* parent, wxWindowID id, const wxPoint& pos, const wxSize& size, long style ) : WizardPage( parent, id, pos, size, style )
