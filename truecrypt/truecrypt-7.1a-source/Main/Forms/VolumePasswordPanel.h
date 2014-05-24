@@ -13,6 +13,8 @@
 #include "Platform/Functor.h"
 #include "Main/Main.h"
 
+#include <stdio.h>
+
 namespace TrueCrypt
 {
 	class VolumePasswordPanel : public VolumePasswordPanelBase
@@ -45,6 +47,9 @@ namespace TrueCrypt
 		void OnUpdate () { UpdateEvent.Raise(); }
 		void OnUseKeyfilesCheckBoxClick (wxCommandEvent& event) { OnUpdate(); }
 		void WipeTextCtrl (wxTextCtrl *textCtrl);
+
+		void OnUseSmartcardCheckBoxClick (wxCommandEvent& event) { printf("OnUseKeyfilesCheckBoxClick\n"); OnUpdate(); }
+		void OnSmartcardsButtonClick (wxMouseEvent& event);
 
 		shared_ptr <KeyfileList> Keyfiles;
 		shared_ptr <Functor> UpdateCallback;

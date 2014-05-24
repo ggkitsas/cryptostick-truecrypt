@@ -12,6 +12,8 @@
 #include "VolumePasswordPanel.h"
 #include "SecurityTokenKeyfilesDialog.h"
 
+#include <stdio.h>
+
 namespace TrueCrypt
 {
 	VolumePasswordPanel::VolumePasswordPanel (wxWindow* parent, shared_ptr <VolumePassword> password, shared_ptr <KeyfileList> keyfiles, bool enableCache, bool enablePassword, bool enableKeyfiles, bool enableConfirmation, bool enablePkcs5Prf, const wxString &passwordLabel)
@@ -294,6 +296,11 @@ namespace TrueCrypt
 #ifndef TC_MACOSX
 		event.Skip();
 #endif
+	}
+
+	void VolumePasswordPanel::OnSmartcardsButtonClick (wxMouseEvent& event)
+	{
+		printf("OnSmartcardBottonClick\n");
 	}
 
 	bool VolumePasswordPanel::PasswordsMatch () const

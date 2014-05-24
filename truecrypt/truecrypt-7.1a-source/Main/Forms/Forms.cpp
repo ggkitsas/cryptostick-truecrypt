@@ -2925,30 +2925,40 @@ VolumePasswordPanelBase::VolumePasswordPanelBase( wxWindow* parent, wxWindowID i
 	
 	GridBagSizer->Add( DisplayPasswordCheckBox, wxGBPosition( 4, 1 ), wxGBSpan( 1, 2 ), wxTOP|wxBOTTOM|wxLEFT|wxALIGN_CENTER_VERTICAL, 5 );
 	
+	// Smart card GUI options
+	UseSmartcardCheckBox = new wxCheckBox( this, wxID_ANY, _("Use smart card"), wxDefaultPosition, wxDefaultSize, 0 );
+	GridBagSizer->Add( UseSmartcardCheckBox, wxGBPosition( 5, 1 ), wxGBSpan( 1, 1), wxTOP|wxBOTTOM|wxLEFT|wxALIGN_CENTER_VERTICAL, 5 );
+	SmartcardButton = new wxButton( this, wxID_ANY, _("Smart cards..."), wxDefaultPosition, wxDefaultSize, 0 );
+	GridBagSizer->Add( SmartcardButton, wxGBPosition( 5, 2 ), wxGBSpan( 1, 1 ), wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL|wxLEFT, 5 );
+
 	UseKeyfilesCheckBox = new wxCheckBox( this, wxID_ANY, _("U&se keyfiles"), wxDefaultPosition, wxDefaultSize, 0 );
-	
-	GridBagSizer->Add( UseKeyfilesCheckBox, wxGBPosition( 5, 1 ), wxGBSpan( 1, 1 ), wxTOP|wxRIGHT|wxLEFT, 5 );
+//	GridBagSizer->Add( UseKeyfilesCheckBox, wxGBPosition( 5, 1 ), wxGBSpan( 1, 1 ), wxTOP|wxRIGHT|wxLEFT, 5 );
+	GridBagSizer->Add( UseKeyfilesCheckBox, wxGBPosition( 6, 1 ), wxGBSpan( 1, 1 ), wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	KeyfilesButton = new wxButton( this, wxID_ANY, _("&Keyfiles..."), wxDefaultPosition, wxDefaultSize, 0 );
-	GridBagSizer->Add( KeyfilesButton, wxGBPosition( 5, 2 ), wxGBSpan( 1, 1 ), wxALIGN_RIGHT|wxALIGN_BOTTOM|wxLEFT, 5 );
+//	GridBagSizer->Add( KeyfilesButton, wxGBPosition( 5, 2 ), wxGBSpan( 1, 1 ), wxALIGN_RIGHT|wxALIGN_BOTTOM|wxLEFT, 5 );
+	GridBagSizer->Add( KeyfilesButton, wxGBPosition( 6, 2 ), wxGBSpan( 1, 1 ), wxALIGN_RIGHT|wxALIGN_BOTTOM|wxLEFT, 5 );
 	
 	Pkcs5PrfSizer = new wxBoxSizer( wxVERTICAL );
-	
-	GridBagSizer->Add( Pkcs5PrfSizer, wxGBPosition( 6, 1 ), wxGBSpan( 1, 1 ), wxEXPAND|wxTOP|wxBOTTOM, 5 );
+//	GridBagSizer->Add( Pkcs5PrfSizer, wxGBPosition( 6, 1 ), wxGBSpan( 1, 1 ), wxEXPAND|wxTOP|wxBOTTOM, 5 );
+	GridBagSizer->Add( Pkcs5PrfSizer, wxGBPosition( 7, 1 ), wxGBSpan( 1, 1 ), wxEXPAND|wxTOP|wxBOTTOM, 5 );
 	
 	Pkcs5PrfStaticText = new wxStaticText( this, wxID_ANY, _("PKCS-5 PRF:"), wxDefaultPosition, wxDefaultSize, 0 );
 	Pkcs5PrfStaticText->Wrap( -1 );
-	GridBagSizer->Add( Pkcs5PrfStaticText, wxGBPosition( 7, 0 ), wxGBSpan( 1, 1 ), wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL|wxRIGHT, 5 );
+//	GridBagSizer->Add( Pkcs5PrfStaticText, wxGBPosition( 7, 0 ), wxGBSpan( 1, 1 ), wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL|wxRIGHT, 5 );
+	GridBagSizer->Add( Pkcs5PrfStaticText, wxGBPosition( 8, 0 ), wxGBSpan( 1, 1 ), wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL|wxRIGHT, 5 );
 	
 	wxString Pkcs5PrfChoiceChoices[] = { _("Unchanged") };
 	int Pkcs5PrfChoiceNChoices = sizeof( Pkcs5PrfChoiceChoices ) / sizeof( wxString );
 	Pkcs5PrfChoice = new wxChoice( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, Pkcs5PrfChoiceNChoices, Pkcs5PrfChoiceChoices, 0 );
 	Pkcs5PrfChoice->SetSelection( 0 );
-	GridBagSizer->Add( Pkcs5PrfChoice, wxGBPosition( 7, 1 ), wxGBSpan( 1, 2 ), wxALIGN_CENTER_VERTICAL|wxLEFT, 5 );
+//	GridBagSizer->Add( Pkcs5PrfChoice, wxGBPosition( 7, 1 ), wxGBSpan( 1, 2 ), wxALIGN_CENTER_VERTICAL|wxLEFT, 5 );
+	GridBagSizer->Add( Pkcs5PrfChoice, wxGBPosition( 8, 1 ), wxGBSpan( 1, 2 ), wxALIGN_CENTER_VERTICAL|wxLEFT, 5 );
 	
 	PasswordPlaceholderSizer = new wxBoxSizer( wxVERTICAL );
 	
-	GridBagSizer->Add( PasswordPlaceholderSizer, wxGBPosition( 8, 1 ), wxGBSpan( 1, 2 ), wxTOP|wxEXPAND, 5 );
+//	GridBagSizer->Add( PasswordPlaceholderSizer, wxGBPosition( 8, 1 ), wxGBSpan( 1, 2 ), wxTOP|wxEXPAND, 5 );
+	GridBagSizer->Add( PasswordPlaceholderSizer, wxGBPosition( 9, 1 ), wxGBSpan( 1, 2 ), wxTOP|wxEXPAND, 5 );
 	
 	bSizer7->Add( GridBagSizer, 1, wxALL|wxEXPAND, 5 );
 	
@@ -2964,6 +2974,8 @@ VolumePasswordPanelBase::VolumePasswordPanelBase( wxWindow* parent, wxWindowID i
 	KeyfilesButton->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( VolumePasswordPanelBase::OnKeyfilesButtonClick ), NULL, this );
 	KeyfilesButton->Connect( wxEVT_RIGHT_DOWN, wxMouseEventHandler( VolumePasswordPanelBase::OnKeyfilesButtonRightDown ), NULL, this );
 	KeyfilesButton->Connect( wxEVT_RIGHT_UP, wxMouseEventHandler( VolumePasswordPanelBase::OnKeyfilesButtonRightClick ), NULL, this );
+	UseSmartcardCheckBox->Connect( wxEVT_COMMAND_CHECKBOX_CLICKED, wxCommandEventHandler( VolumePasswordPanelBase::OnUseSmartcardCheckBoxClick  ), NULL, this );
+	SmartcardButton->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxMouseEventHandler( VolumePasswordPanelBase::OnSmartcardsButtonClick ), NULL, this );
 }
 
 VolumePasswordPanelBase::~VolumePasswordPanelBase()
@@ -2976,6 +2988,8 @@ VolumePasswordPanelBase::~VolumePasswordPanelBase()
 	KeyfilesButton->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( VolumePasswordPanelBase::OnKeyfilesButtonClick ), NULL, this );
 	KeyfilesButton->Disconnect( wxEVT_RIGHT_DOWN, wxMouseEventHandler( VolumePasswordPanelBase::OnKeyfilesButtonRightDown ), NULL, this );
 	KeyfilesButton->Disconnect( wxEVT_RIGHT_UP, wxMouseEventHandler( VolumePasswordPanelBase::OnKeyfilesButtonRightClick ), NULL, this );
+	UseSmartcardCheckBox->Disconnect( wxEVT_COMMAND_CHECKBOX_CLICKED, wxCommandEventHandler( VolumePasswordPanelBase::OnUseSmartcardCheckBoxClick ), NULL, this );
+	SmartcardButton->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxMouseEventHandler( VolumePasswordPanelBase::OnSmartcardsButtonClick ), NULL, this );
 }
 
 VolumePasswordWizardPageBase::VolumePasswordWizardPageBase( wxWindow* parent, wxWindowID id, const wxPoint& pos, const wxSize& size, long style ) : WizardPage( parent, id, pos, size, style )
