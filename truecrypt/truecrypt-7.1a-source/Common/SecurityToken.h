@@ -183,6 +183,7 @@ namespace TrueCrypt
 		static vector <SecurityTokenKeyfile> GetAvailableKeyfiles (CK_SLOT_ID *slotIdFilter = nullptr, const wstring keyfileIdFilter = wstring());
 		static void GetKeyfileData (const SecurityTokenKeyfile &keyfile, vector <byte> &keyfileData);
 		static list <SecurityTokenInfo> GetAvailableTokens ();
+		static vector <SecurityTokenInfo> GetAvailableTokensVector();
 		static SecurityTokenInfo GetTokenInfo (CK_SLOT_ID slotId);
 		static void InitLibrary (const string &pkcs11LibraryPath, auto_ptr <GetPinFunctor> pinCallback, auto_ptr <SendExceptionFunctor> warningCallback);
 		static bool IsInitialized () { return Initialized; }
