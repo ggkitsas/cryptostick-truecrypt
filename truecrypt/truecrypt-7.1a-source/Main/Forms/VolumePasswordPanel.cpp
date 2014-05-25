@@ -12,6 +12,7 @@
 #include "VolumePasswordPanel.h"
 #include "SecurityTokenKeyfilesDialog.h"
 
+#include "SecurityTokensDialog.h"
 #include <stdio.h>
 
 namespace TrueCrypt
@@ -300,8 +301,21 @@ namespace TrueCrypt
 
 	void VolumePasswordPanel::OnSecurityTokensButtonClick (wxMouseEvent& event)
 	{
-		printf("OnSecurityTokensButtonClick\n");
-		
+		try
+		{
+			SecurityTokensDialog dialog (this);
+			SecurityTokenInfo* SelectedSecurityToken = NULL;
+			if (dialog.ShowModal() == wxID_OK)
+			{
+				SelectedSecurityToken = dialog.GetSelectedSecurityToken();
+				UseSecurityTokenCheckBox->SetValue (!(SelectedSecurityToken == NULL));
+				OnUpdate();
+			}
+		}
+		catch (exception &e)
+		{
+			Gui->ShowError (e);
+		}
 	}
 
 	bool VolumePasswordPanel::PasswordsMatch () const
