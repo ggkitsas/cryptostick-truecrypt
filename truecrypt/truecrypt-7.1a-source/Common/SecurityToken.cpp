@@ -281,6 +281,35 @@ namespace TrueCrypt
 		return tokens;
 	}
 
+	vector <SecurityTokenInfo> SecurityToken::GetAvailableTokensVector()
+	{
+		bool unrecognizedTokenPresent = false;
+		vector <SecurityTokenInfo> tokens;
+
+		foreach (const CK_SLOT_ID &slotId, GetTokenSlots())
+		{
+			try
+			{
+				tokens.push_back (GetTokenInfo (slotId));
+			}
+			catch (Pkcs11Exception &e)
+			{
+				if (e.GetErrorCode() == CKR_TOKEN_NOT_RECOGNIZED)
+				{
+					unrecognizedTokenPresent = true;
+					continue;
+				}
+
+				throw;
+			}
+		}
+
+		if (tokens.empty() && unrecognizedTokenPresent)
+			throw Pkcs11Exception (CKR_TOKEN_NOT_RECOGNIZED);
+
+		return tokens;
+	}
+
 	SecurityTokenInfo SecurityToken::GetTokenInfo (CK_SLOT_ID slotId)
 	{
 		CK_TOKEN_INFO info;
