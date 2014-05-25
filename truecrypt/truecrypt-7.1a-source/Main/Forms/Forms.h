@@ -681,6 +681,32 @@ namespace TrueCrypt
 	};
 	
 	///////////////////////////////////////////////////////////////////////////////
+	/// Class SecurityTokensDialogBase
+	///////////////////////////////////////////////////////////////////////////////
+	class SecurityTokensDialogBase : public wxDialog 
+	{
+		private:
+		
+		protected:
+			wxListCtrl* SecurityTokensListCtrl;
+
+			wxButton* OKButton;
+			wxButton* CancelButton;
+			
+			// Virtual event handlers, overide them in your derived class
+			virtual void OnListItemActivated( wxListEvent& event ){ event.Skip(); }
+			virtual void OnListItemDeselected( wxListEvent& event ){ event.Skip(); }
+			virtual void OnListItemSelected( wxListEvent& event ){ event.Skip(); }
+			virtual void OnOKButtonClick( wxCommandEvent& event ){ event.Skip(); }
+			
+		
+		public:
+			SecurityTokensDialogBase( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = _("Security Token Keyfiles"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( -1,-1 ), long style = wxDEFAULT_DIALOG_STYLE );
+			~SecurityTokensDialogBase();
+		
+	};
+
+	///////////////////////////////////////////////////////////////////////////////
 	/// Class VolumePropertiesDialogBase
 	///////////////////////////////////////////////////////////////////////////////
 	class VolumePropertiesDialogBase : public wxDialog 

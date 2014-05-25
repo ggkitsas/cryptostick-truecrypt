@@ -2233,6 +2233,60 @@ SecurityTokenKeyfilesDialogBase::~SecurityTokenKeyfilesDialogBase()
 	OKButton->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( SecurityTokenKeyfilesDialogBase::OnOKButtonClick ), NULL, this );
 }
 
+SecurityTokensDialogBase::SecurityTokensDialogBase ( wxWindow* parent, wxWindowID id, const wxString& title, const wxPoint& pos, const wxSize& size, long style ) 
+	: wxDialog( parent, id, title, pos, size, style )
+{
+	this->SetSizeHints( wxSize( -1,-1 ), wxDefaultSize );
+	this->SetExtraStyle( wxWS_EX_VALIDATE_RECURSIVELY );
+	
+	wxBoxSizer* bSizer3;
+	bSizer3 = new wxBoxSizer( wxVERTICAL );
+	
+	wxBoxSizer* bSizer138;
+	bSizer138 = new wxBoxSizer( wxHORIZONTAL );
+	
+	wxBoxSizer* bSizer142;
+	bSizer142 = new wxBoxSizer( wxVERTICAL );
+	
+	SecurityTokensListCtrl = new wxListCtrl( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLC_NO_SORT_HEADER|wxLC_REPORT|wxLC_SINGLE_SEL|wxLC_VRULES|wxSUNKEN_BORDER );
+	bSizer142->Add( SecurityTokensListCtrl, 1, wxALL|wxEXPAND, 5 );
+	
+	bSizer138->Add( bSizer142, 1, wxEXPAND, 5 );
+	
+	wxBoxSizer* bSizer139;
+	bSizer139 = new wxBoxSizer( wxVERTICAL );
+	
+	OKButton = new wxButton( this, wxID_OK, _("OK"), wxDefaultPosition, wxDefaultSize, 0 );
+	OKButton->SetDefault(); 
+	bSizer139->Add( OKButton, 0, wxALL, 5 );
+	
+	CancelButton = new wxButton( this, wxID_CANCEL, _("Cancel"), wxDefaultPosition, wxDefaultSize, 0 );
+	bSizer139->Add( CancelButton, 0, wxALL, 5 );
+	
+	bSizer138->Add( bSizer139, 0, wxEXPAND, 5 );
+	
+	bSizer3->Add( bSizer138, 1, wxEXPAND|wxALL, 5 );
+	
+	this->SetSizer( bSizer3 );
+	this->Layout();
+	bSizer3->Fit( this );
+	
+	// Connect Events
+	SecurityTokensListCtrl->Connect( wxEVT_COMMAND_LIST_ITEM_ACTIVATED, wxListEventHandler( SecurityTokensDialogBase::OnListItemActivated ), NULL, this );
+	SecurityTokensListCtrl->Connect( wxEVT_COMMAND_LIST_ITEM_DESELECTED, wxListEventHandler( SecurityTokensDialogBase::OnListItemDeselected ), NULL, this );
+	SecurityTokensListCtrl->Connect( wxEVT_COMMAND_LIST_ITEM_SELECTED, wxListEventHandler( SecurityTokensDialogBase::OnListItemSelected ), NULL, this );
+	OKButton->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( SecurityTokensDialogBase::OnOKButtonClick ), NULL, this );
+}
+
+SecurityTokensDialogBase::~SecurityTokensDialogBase()
+{
+	// Disconnect Events
+	SecurityTokensListCtrl->Disconnect( wxEVT_COMMAND_LIST_ITEM_ACTIVATED, wxListEventHandler( SecurityTokensDialogBase::OnListItemActivated ), NULL, this );
+	SecurityTokensListCtrl->Disconnect( wxEVT_COMMAND_LIST_ITEM_DESELECTED, wxListEventHandler( SecurityTokensDialogBase::OnListItemDeselected ), NULL, this );
+	SecurityTokensListCtrl->Disconnect( wxEVT_COMMAND_LIST_ITEM_SELECTED, wxListEventHandler( SecurityTokensDialogBase::OnListItemSelected ), NULL, this );
+	OKButton->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( SecurityTokensDialogBase::OnOKButtonClick ), NULL, this );
+}
+
 VolumePropertiesDialogBase::VolumePropertiesDialogBase( wxWindow* parent, wxWindowID id, const wxString& title, const wxPoint& pos, const wxSize& size, long style ) : wxDialog( parent, id, title, pos, size, style )
 {
 	this->SetSizeHints( wxDefaultSize, wxDefaultSize );
