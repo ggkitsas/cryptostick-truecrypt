@@ -43,6 +43,7 @@ OBJS += Forms/PreferencesDialog.o
 OBJS += Forms/ProgressWizardPage.o
 OBJS += Forms/RandomPoolEnrichmentDialog.o
 OBJS += Forms/SecurityTokenKeyfilesDialog.o
+OBJS += Forms/SecurityTokensDialog.o
 OBJS += Forms/SelectDirectoryWizardPage.o
 OBJS += Forms/VolumePasswordPanel.o
 OBJS += Forms/VolumePropertiesDialog.o
