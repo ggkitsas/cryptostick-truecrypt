@@ -466,6 +466,20 @@ namespace TrueCrypt
 		return selectedItems;
 	}
 
+	long GraphicUserInterface::GetListCtrlSelectedItem (wxListCtrl *listCtrl) const
+	{
+		long selectedItem;
+		
+		long item = -1;
+		while ((item = listCtrl->GetNextItem (item, wxLIST_NEXT_ALL, wxLIST_STATE_SELECTED)) != -1)
+		{
+			selectedItem = item;
+			break;
+		}
+
+		return selectedItem;
+	}
+
 	wxString GraphicUserInterface::GetListCtrlSubItemText (wxListCtrl *listCtrl, long itemIndex, int columnIndex) const
 	{
 		wxListItem item;

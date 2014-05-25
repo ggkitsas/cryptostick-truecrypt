@@ -52,6 +52,7 @@ namespace TrueCrypt
 		virtual wxFrame *GetMainFrame () const { return mMainFrame; }
 		virtual int GetScrollbarWidth (wxWindow *window, bool noScrollBar = false) const;
 		virtual list <long> GetListCtrlSelectedItems (wxListCtrl *listCtrl) const;
+		virtual long GetListCtrlSelectedItem (wxListCtrl *listCtrl) const;
 		virtual wxString GetListCtrlSubItemText (wxListCtrl *listCtrl, long itemIndex, int columnIndex) const;
 		virtual void ImportSecurityTokenKeyfiles () const { ThrowTextModeRequired(); }
 		virtual void InitSecurityTokenLibrary () const;
