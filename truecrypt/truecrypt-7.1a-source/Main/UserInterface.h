@@ -53,6 +53,7 @@ namespace TrueCrypt
 		virtual void InitSecurityTokenLibrary () const = 0;
 		virtual void ListMountedVolumes (const VolumeInfoList &volumes) const;
 		virtual void ListSecurityTokenKeyfiles () const = 0;
+		virtual void ListSecurityTokens () const = 0;
 		virtual shared_ptr <VolumeInfo> MountVolume (MountOptions &options) const;
 		virtual VolumeInfoList MountAllDeviceHostedVolumes (MountOptions &options) const;
 		virtual VolumeInfoList MountAllFavoriteVolumes (MountOptions &options);

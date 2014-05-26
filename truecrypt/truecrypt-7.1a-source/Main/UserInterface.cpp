@@ -1296,6 +1296,10 @@ namespace TrueCrypt
 			ListSecurityTokenKeyfiles();
 			return true;
 
+		case CommandId::ListSecurityTokens:
+			ListSecurityTokens();
+			return true;
+
 		case CommandId::ListVolumes:
 			if (Preferences.Verbose)
 				DisplayVolumeProperties (cmdLine.ArgVolumes);
