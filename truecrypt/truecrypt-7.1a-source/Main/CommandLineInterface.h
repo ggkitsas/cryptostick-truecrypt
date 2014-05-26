@@ -39,6 +39,7 @@ namespace TrueCrypt
 			Help,
 			ImportSecurityTokenKeyfiles,
 			ListSecurityTokenKeyfiles,
+			ListSecurityTokens,
 			ListVolumes,
 			MountVolume,
 			RestoreHeaders,

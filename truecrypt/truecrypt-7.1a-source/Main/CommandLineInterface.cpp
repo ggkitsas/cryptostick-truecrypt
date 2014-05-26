@@ -53,6 +53,7 @@ namespace TrueCrypt
 		parser.AddOption (L"k", L"keyfiles",			_("Keyfiles"));
 		parser.AddSwitch (L"l", L"list",				_("List mounted volumes"));
 		parser.AddSwitch (L"",	L"list-token-keyfiles",	_("List security token keyfiles"));
+		parser.AddSwitch (L"",	L"list-tokens",			_("List available security tokens"));
 		parser.AddSwitch (L"",	L"load-preferences",	_("Load user preferences"));
 		parser.AddSwitch (L"",	L"mount",				_("Mount volume interactively"));
 		parser.AddOption (L"m", L"mount-options",		_("TrueCrypt volume mount options"));
@@ -212,6 +213,12 @@ namespace TrueCrypt
 		{
 			CheckCommandSingle();
 			ArgCommand = CommandId::ListSecurityTokenKeyfiles;
+		}
+
+		if (parser.Found (L"list-tokens"))
+		{
+			CheckCommandSingle();
+			ArgCommand = CommandId::ListSecurityTokens;
 		}
 
 		if (parser.Found (L"mount"))
