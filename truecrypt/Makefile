@@ -5,7 +5,7 @@ DEPS=libgtk2.0-dev nasm libfuse-dev opensc libwxgtk2.8-dev
 J?=1
 
 #These must be setup from comand line
-DEBUG= DEBUG=1 DEBUGGER=1 NOSTRIP=1 VERBOSE=1 NOGUI=1
+DEBUG= DEBUG=1 DEBUGGER=1 NOSTRIP=1 VERBOSE=1 NOGUI=1 WXSTATIC=1
 
 setup:
 	#mkdir pkcs-11
