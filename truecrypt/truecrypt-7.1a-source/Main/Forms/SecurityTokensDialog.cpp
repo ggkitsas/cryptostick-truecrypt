@@ -13,7 +13,7 @@ namespace TrueCrypt
 		: SecurityTokensDialogBase (parent)
 	{
 		if (selectionMode)
-			SetTitle (LangString["SELECT_TOKEN"]);
+			SetTitle (LangString["SECURITY_TOKEN_SELECT"]);
 
 		// Set up list's layout
 
@@ -56,17 +56,6 @@ namespace TrueCrypt
 			Gui->AppendToListCtrl (SecurityTokensListCtrl, fields, 0, &SecurityTokenInfoList[i++]); 
 		}
 
-		// Dummy item to test dialog functionallity
-		/*
-			vector <wstring> fields (SecurityTokensListCtrl->GetColumnCount());
-			
-			fields[ColumnSecurityTokenSlotId] = StringConverter::ToWide ((uint64) 10);
-			wchar_t test[] = L"test";
-			fields[ColumnSecurityTokenLabel] = test;
-			SecurityTokenInfo test_info;
-			test_info.Label=L"test";
-			Gui->AppendToListCtrl (SecurityTokensListCtrl, fields, 0, &test_info); 
-		*/
 	}
 
 	void SecurityTokensDialog::OnListItemDeselected (wxListEvent& event)
