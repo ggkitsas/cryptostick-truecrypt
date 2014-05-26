@@ -30,6 +30,7 @@
 #include "Forms/MountOptionsDialog.h"
 #include "Forms/RandomPoolEnrichmentDialog.h"
 #include "Forms/SecurityTokenKeyfilesDialog.h"
+#include "Forms/SecurityTokensDialog.h"
 
 namespace TrueCrypt
 {
@@ -597,6 +598,12 @@ namespace TrueCrypt
 	void GraphicUserInterface::ListSecurityTokenKeyfiles () const
 	{
 		SecurityTokenKeyfilesDialog dialog (nullptr);
+		dialog.ShowModal();
+	}
+
+	void GraphicUserInterface::ListSecurityTokens () const
+	{
+		SecurityTokensDialog dialog (nullptr);
 		dialog.ShowModal();
 	}
 

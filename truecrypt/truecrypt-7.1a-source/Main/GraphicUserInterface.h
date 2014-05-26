@@ -60,6 +60,7 @@ namespace TrueCrypt
 		virtual bool IsInBackgroundMode () const { return BackgroundMode; }
 		virtual bool IsTheOnlyTopLevelWindow (const wxWindow *window) const;
 		virtual void ListSecurityTokenKeyfiles () const;
+		virtual void ListSecurityTokens () const;
 		virtual VolumeInfoList MountAllDeviceHostedVolumes (MountOptions &options) const;
 		virtual shared_ptr <VolumeInfo> MountVolume (MountOptions &options) const;
 		virtual void MoveListCtrlItem (wxListCtrl *listCtrl, long itemIndex, long newItemIndex) const;
