@@ -1039,6 +1039,11 @@ namespace TrueCrypt
 		}
 	}
 
+	void TextUserInterface::ListSecurityTokens () const
+	{
+			ShowString (L"test --list-tokens\n");
+	}
+
 	VolumeInfoList TextUserInterface::MountAllDeviceHostedVolumes (MountOptions &options) const
 	{
 		while (true)
