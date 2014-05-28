@@ -20,8 +20,6 @@ Tasks Involved:
     contains: 	truecrypt sources
 		wxwidgets sources needed to build truecrypt
 		pkcs11 headers
-  cryptostick/
-    Here lives cryptostick firmware and client sources
 
   docs/
    Contains needed documentation for the project
