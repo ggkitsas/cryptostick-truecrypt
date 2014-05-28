@@ -2,6 +2,14 @@
 *.d
 *.a
 *.swp
+*tags
+
+gdb-scripts/
+truecrypt/builds/
+truecrypt/truecrypt-7.1a-source/wxdebug/
+truecrypt/vim-sessions/
+truecrypt/workbench/
+
 
 truecrypt/wxGTK-2.8.12.tar.gz
 truecrypt/truecrypt-7.1a-source/wxrelease
